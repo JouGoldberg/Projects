@@ -1,0 +1,487 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F
+}
+
+.home {
+    margin-top: 95px;
+}
+
+.restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restaurantHeading {
+    width: min-content;
+    color: var(--secondary);
+    background-color: rgb(255, 138, 0, 0.1);
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+}
+
+.restaurantTitle {
+    margin-block: 20px;
+    color: var(--primary);
+    font-family: 'raleway', sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.restaurantInfo {
+    color: #5C4529;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.restaurantButtons {
+    margin-top: 55px;
+    display: flex;
+    gap: 12px;
+}
+
+.restaurantButtons button {
+    color: white;
+    width: 190px;
+    padding-block: 16px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.restaurantOrder {
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+}
+
+.restaurantReservation {
+    border: 1px solid var(--tertiary);
+    background-color: var(--tertiary);
+}
+
+.restaurantOrder:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+
+.restaurantReservation:hover {
+    border: 1px solid #338b25;
+    background-color: #338b25;
+}
+
+.restaurantLeft {
+    width: 50%;
+}
+
+.restaurantRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.vegetable1 {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-12%, -15%);
+    user-select: none;
+}
+
+.vegetable2 {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(160deg);
+    translate: 6% 13%;
+    user-select: none;
+}
+
+.restaurantSpaghettiImg {
+    width: 97%;
+    z-index: 1;
+    filter: drop-shadow(-5px 10px 25px rgba(79, 79, 79, 0.2));
+    user-select: none;
+}
+
+/* ----------> Welcome to Delizioso  <----------*/
+
+.welcomeDelizioso {
+    margin-top: 130px;
+    padding-block: 100px;
+    background-color: rgb(63, 198, 110, 0.1);
+}
+
+.insideWelcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcomeLeft {
+    width: 49%;
+    position: relative;
+}
+
+.leaf1,
+.leaf2 {
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+}
+
+.leaf1 {
+    top: 60%;
+    left: -20px;
+    transform: rotate(120deg);
+    width: 140px;
+}
+
+.leaf2 {
+    right: 5px;
+    top: 80px;
+    transform: rotate(250deg);
+}
+
+.welcomeRight {
+    width: 42%;
+}
+
+.saladImg {
+    width: 100%;
+    filter: drop-shadow(20px 20px 20px rgba(79, 79, 79, 0.2));
+    user-select: none;
+}
+
+.welcomeTitle {
+    color: var(--primary);
+    font-size: 85px;
+    font-family: 'tinos';
+    font-weight: 700;
+}
+
+.orange {
+    color: var(--secondary);
+}
+
+.welcomeInfo {
+    color: #5C4529;
+    margin-block: 20px;
+    font-size: 20px;
+    font-family: 'poppins';
+}
+
+.welcomeBtn {
+    margin-top: 32px;
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    width: 190px;
+    padding-block: 16px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.welcomeBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+
+/* ----------> Reverse Table <---------------------- */
+
+.reserveTable {
+    margin-top: 110px;
+    padding-block: 75px;
+    background-color: #fff4e7cb;
+}
+
+.insideReserve {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reserveLeft {
+    width: 56%;
+    position: relative;
+    border: 1px solid rgb(49, 31, 9, 0.2);
+    border-radius: 100%;
+    height: 775px;
+    transform: translateX(-80px);
+}
+
+.reserveRight {
+    width: 40%;
+}
+
+.reerveTitle {
+    color: var(--primary);
+    font-size: 80px;
+    font-family: 'tinos';
+    font-weight: 700;
+}
+
+.reserveInfo {
+    color: #5C4529;
+    margin-block: 23px;
+    font-size: 20px;
+    font-family: 'poppins';
+}
+
+.reserveBtn {
+    margin-top: 30px;
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    width: 190px;
+    padding-block: 16px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.reserveBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+
+.insideLeft {
+    border-radius: 100%;
+    position: absolute;
+    inset: 90px;
+    background-color: rgb(225, 195, 159, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftImg {
+    width: 455px;
+    height: 445px;
+    border-radius: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.reserveAbsolute {
+    width: 145px;
+    height: 145px;
+    background-color: rgb(225, 195, 159, 0.2);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.reserveAbsolute img {
+    width: 109px;
+    height: 109px;
+    border-radius: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.reserveAbsolute1 {
+    top: 0px;
+    right: 90px;
+}
+
+.reserveAbsolute2 {
+    left: 90px;
+    bottom: 0px;
+}
+
+/* -----------> Chef <------------- */
+
+.chefTitle {
+    margin-top: 70px;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'tinos';
+    text-align: center;
+}
+
+.cooks {
+    margin-top: 80px;
+    display: grid;
+    gap: 40px 35px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.chefCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chefImage {
+    border-radius: 45px;
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+    object-position: top center;
+    user-select: none;
+}
+
+.chefName {
+    color: var(--primary);
+    margin-top: 30px;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.chefJob {
+    margin-top: 18px;
+    color: #A08D76;
+    font-family: 'poppins';
+    font-size: 20px;
+}
+
+.chefBtn {
+    width: 220px;
+    color: white;
+    margin-top: 80px;
+    margin-inline: auto;
+    padding-block: 16px;
+    font-size: 20px;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 30px;
+    display: block;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.chefHideBtn {
+    width: 50px;
+    height: 50px;
+    color: black;
+    margin-top: 70px;
+    margin-inline: auto;
+    font-size: 25px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.chefHideBtn:hover {
+    background-color: rgb(227, 227, 227);
+    border: 1px solid rgb(227, 227, 227);
+}
+
+.chefBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+.hideBtn {
+    display: none;
+}
+
+/* --------------> weAreOpen <-------------- */
+
+.weAreOpen {
+    margin-top: 125px;
+    padding-block: 45px 57px;
+    width: 100%;
+    background: linear-gradient(25deg, rgba(6, 6, 6, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 70px;
+    position: relative;
+}
+
+.insideWeAreOpen {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.openTitle {
+    font-family: 'tinos';
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.openInfo {
+    margin-top: 19px;
+    font-family: 'poppins';
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.openTimeDiv {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+}
+
+.openTimeP {
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: 300;
+}
+
+.openButtons {
+    margin-top: 48px;
+    display: flex;
+    gap: 12px;
+}
+
+.openButtons button {
+    color: white;
+    width: 230px;
+    padding-block: 18px;
+    font-size: 19px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.openOrderBtn {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.openReservBtn {
+    background-color: var(--tertiary);
+    border: 1px solid var(--tertiary);
+}
+
+.openOrderBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+
+.openReservBtn:hover {
+    border: 1px solid #338b25;
+    background-color: #338b25;
+}
+
+.weAreOpenImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0px;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 70px;
+}

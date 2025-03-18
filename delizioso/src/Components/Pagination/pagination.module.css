@@ -1,0 +1,62 @@
+
+.panigation {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.insidePanigation {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.navBtn {
+    margin-inline: 2px;
+    width: 47px;
+    height: 47px;
+    padding-bottom: 2px;
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    user-select: none;
+}
+
+.panigationNum {
+    color: var(--secondary);
+    background-color: rgb(255, 138, 0, 0.1);
+    border: 1px solid rgb(255, 138, 0, 0);
+    border-radius: 13px;
+    width: 47px;
+    height: 47px;
+    font-family: 'poppins';
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+    user-select: none;
+}
+
+.activeMenuPage {
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.panigationNum:hover {
+    border: 1px solid rgb(255, 138, 0, 0.5);
+}
+
+.navBtn:hover {
+    background-color: #352a16;
+}

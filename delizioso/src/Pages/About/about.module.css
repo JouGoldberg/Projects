@@ -1,0 +1,157 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F
+}
+
+.about {
+    margin-top: 65px;
+}
+
+.aboutHead {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutHeadLeft {
+    width: 59%;
+    height: 815px;
+    border-radius: 100%;
+    position: relative;
+    background-color: rgb(208, 204, 199 , 0.1);
+    transform: translateX(-80px);
+}
+.headLeftInside{
+    background-color: rgb(208, 204, 199 , 0.2);
+    border-radius: 100%;
+    position: absolute;
+    inset: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headLeftInsideImg {
+    width: 490px;
+    height: 480px;
+    border-radius: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.aboutHeadRight{
+    width: 37%;
+}
+.aboutRightTitle {
+    color: var(--primary);
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'tinos';
+}
+.orange {
+    color: var(--secondary);
+}
+.aboutRightInfo {
+    color: #5C4529;
+    font-size: 21px;
+    font-family: 'poppins';
+    margin-top: 30px;
+    margin-right: 70px;
+    line-height: 35px;
+}
+
+.aboutMainEnd{
+    display: flex;
+    justify-content: end;
+    overflow-x: hidden;
+}
+.aboutMain {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutMainLeft {
+    width: 38%;
+}
+.aboutMainRight {
+    width: 59%;
+    height: 815px;
+    border-radius: 100%;
+    position: relative;
+    background-color: rgb(208, 204, 199 , 0.1);
+    transform: translateX(80px);
+}
+.aboutMainLeftInfo {
+    color: #5C4529;
+    font-size: 21px;
+    line-height: 35px;
+    font-family: 'poppins';
+    margin-top: 35px;
+    margin-left:40px;
+    margin-right: 20px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.executiveChef{
+    margin-top: 110px;
+    margin-bottom: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.executiveChefLeft{
+    width: 45%;
+}
+.executiveChefLeft img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    object-position: center top;
+    user-select: none;
+
+}
+.executiveChefRight {
+    width: 47%;
+}
+
+.executiveChefRight h1 {
+    color: var(--primary);
+    font-size: 80px;
+    font-family: 'tinos';
+    font-weight: 700;
+}
+.chefName {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+.executiveChefRightFoot {
+    padding-right: 70px;
+    margin-top: 90px;
+}
+.executiveChefRightFoot p {
+    line-height: 58px;
+    margin-block: 20px;
+    color: #5C4529;
+    font-size: 30px;
+    font-family: 'poppins';
+    font-weight: 300;
+    font-style: italic;
+
+}
+.icon2Div{
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+.icon2{
+    transform: rotate(180deg);
+}
+.executiveChefRightFoot img {
+    user-select: none;
+}

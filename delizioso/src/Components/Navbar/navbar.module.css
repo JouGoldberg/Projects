@@ -1,0 +1,93 @@
+:root {
+    --primary : #311F09 ;
+    --secondary : #FF8A00 ;
+    --tertiary: #3FA72F
+}
+
+.navbar{
+    padding-block: 20px;
+}
+.insideNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    user-select: none;
+
+}
+.logoLink {
+    position: absolute;
+    inset: 0px;
+}
+.navLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    color: var(--primary);
+    text-decoration: none;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.active{
+    color: var(--secondary);
+}
+.navEnd {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.basketImgDiv {
+    position: relative;
+    user-select: none;
+}
+.basketImg {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    background-color: rgb(228, 228, 228 , 0);
+    cursor: pointer;
+    transition: 300ms;
+}
+.basketImg:hover {
+    background-color: rgb(128, 128, 128 , 0.1);
+}
+
+.basketNum {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-family: 'poppins';
+    font-size: 9px;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    user-select: none;
+}
+.loginLink {
+    color: white;
+    text-decoration: none;
+    background-color: var(--tertiary);
+    font-family:  'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 26px;
+    border-radius:35px;
+    transition: 200ms;
+}
+.loginLink:hover {
+    background-color: #338b25;
+}

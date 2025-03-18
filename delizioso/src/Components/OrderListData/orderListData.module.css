@@ -1,0 +1,87 @@
+.menuLeft {
+    width: 100%;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuNotItem {
+    font-family: 'poppins';
+    font-size: 80px;
+    grid-column: 2;
+}
+
+.menuCard {
+    padding-block: 23px;
+    padding-inline: 20px;
+    background-color: rgba(208, 204, 199, 0.1);
+    border-radius: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    filter: contrast(110%);
+    user-select: none;
+}
+
+.cardName {
+    width: 220px;
+    color: #342717;
+    margin-top: 18px;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'poppins';
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardDesc {
+    margin-top: 10px;
+    color: rgb(52, 39, 23, 0.8);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+
+.cardFoot {
+    margin-top: 18px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardPrice {
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.cardOrder {
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cardOrder:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}

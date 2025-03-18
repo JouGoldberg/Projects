@@ -1,0 +1,170 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.linkDiv{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.posRelative {
+    position: relative;
+}
+.posRelative img {
+    width: 35px;
+    height: 35px;
+}
+.homeLink {
+    position: absolute;
+    inset: 0px;
+}
+.insideLogin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.insideLeft {
+    width: 65%;
+}
+
+.loginRight {
+    width: 50%;
+    height: 100%;
+}
+
+.loginTitle {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'raleway';
+}
+
+.loginInfo {
+    color: var(--primary);
+    margin-top: 16px;
+    font-size: 19px;
+    font-family: 'poppins';
+}
+
+.signLink {
+    color: #209df6;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginInput {
+    background-color: rgb(208, 204, 199, 0.1);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'poppins';
+    margin-top: 23px;
+    padding: 17px 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 200ms;
+}
+
+.loginInput:focus {
+    border: 1px solid rgb(159, 157, 157, 0.6);
+}
+
+.loginRightImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rememberDiv {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rememberCheckbox input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.rememberP {
+    color: var(--primary);
+    font-family: 'poppins';
+    font-size: 16px;
+}
+
+.rememberForget {
+    color: var(--primary);
+    font-family: 'poppins';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rememberCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginBtn {
+    margin-top: 30px;
+    width: 100%;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    color: white;
+    padding-block: 10px;
+    font-size: 18px;
+    font-family: 'poppins';
+    padding-block: 15px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.loginBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
+
+.googleLogin {
+    margin-top: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-block: 15px;
+    font-family: 'poppins';
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.googleLogin img {
+    width: 28px;
+    height: 28px;
+}
+
+.googleLogin:hover {
+    background-color: rgb(159, 157, 157, 0.1);
+}

@@ -1,0 +1,213 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F
+}
+
+.title {
+    color: var(--primary);
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'tinos';
+    text-align: center;
+}
+
+.checkoutHead {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.exitBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #311F09;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.exitBtn:hover {
+    background-color: #190e01;
+}
+
+.orderData {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+.contactForm {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contactForm textarea {
+    height: 200px;
+    padding: 25px;
+    resize: none;
+    grid-column: 1 / 3;
+    font-size: 18px;
+    font-family: 'poppins';
+    outline: none;
+    background-color: rgb(208, 204, 199, 0.1);
+    border: 1px solid rgb(159, 157, 157, 0);
+    border-radius: 8px;
+    transition: 200ms;
+}
+
+.contactForm textarea:focus {
+    border: 1px solid rgb(159, 157, 157, 0.6);
+}
+
+.formInput {
+    font-family: 'poppins';
+    font-size: 18px;
+    padding: 30px;
+    outline: none;
+    background-color: rgb(208, 204, 199, 0.1);
+    border: 1px solid rgb(159, 157, 157, 0);
+    border-radius: 8px;
+    transition: 200ms;
+}
+
+.formInput:focus {
+    border: 1px solid rgb(159, 157, 157, 0.6);
+}
+
+.formD {
+    width: 35%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radioD {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.radioD input {
+    width: 25px;
+    height: 25px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+.radioD p {
+    font-size: 20px;
+    color: #5C4529;
+    font-family: 'poppins';
+}
+
+.paymentRadio {
+    width: 40%;
+    background-color: rgb(208, 204, 199, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-block: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.paymentRadio:hover {
+    background-color: rgb(208, 204, 199, 0.3);
+}
+
+.shipping {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.shippingInp {
+    width: 100%;
+    padding-block: 22px;
+    padding-inline: 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(208, 204, 199, 0.1);
+    border: 1px solid transparent;
+    outline: none;
+    transition: 200ms;
+    box-sizing: border-box;
+}
+
+.shippingInp:focus {
+    border: 1px solid rgb(159, 157, 157, 0.6);
+}
+
+.shippingBtn {
+    background-color: #53A5E0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'poppins';
+    padding-inline: 40px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.shippingBtn:hover {
+    background-color: #3878a6;
+}
+
+.mapD {
+    margin-top: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.mapImg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.mapLocation {
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 57%;
+    left: 54%;
+    user-select: none;
+}
+
+.orderFoot {
+    display: flex;
+    justify-content: center;
+}
+
+.orderNowBtn {
+    margin-top: 80px;
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    width: 300px;
+    padding-block: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.orderNowBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}

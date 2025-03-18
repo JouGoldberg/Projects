@@ -1,0 +1,75 @@
+.reservation {
+    margin-top: 60px;
+}
+
+.title {
+    color: var(--primary);
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'tinos';
+    text-align: center;
+}
+
+.info {
+    margin-top: 10px;
+    color: #5C4529;
+    font-family: 'poppins';
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactForm {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.formNumber {
+    grid-column: 3 / span 2;
+}
+
+.formInput {
+    font-family: 'poppins';
+    font-size: 18px;
+    padding: 30px;
+    outline: none;
+    background-color: rgb(208, 204, 199, 0.1);
+    border: 1px solid rgb(159, 157, 157, 0);
+    border-radius: 8px;
+    transition: 200ms;
+}
+
+.contactForm textarea {
+    height: 200px;
+    resize: none;
+    grid-column: 1 /span 4;
+}
+
+.formInput:focus {
+    border: 1px solid rgb(159, 157, 157, 0.6);
+}
+
+.formSubmitDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formBtn {
+    margin-top: 60px;
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    width: 300px;
+    padding-block: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.formBtn:hover {
+    background-color: #ca6d04;
+    border: 1px solid #ca6d04;
+}
