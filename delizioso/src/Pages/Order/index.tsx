@@ -14,7 +14,7 @@ const Order = () => {
   }, [])
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const menuItem: string = searchParams.get('menuItem') || 'lunch'
+  const menuItem: string = searchParams.get('menuItem') || 'dinner'
   const showMenu: IMenuItem[] | null = popularMenu[menuItem as keyof typeof popularMenu] || null
 
   const handleMenuItem = (item: string): void => {

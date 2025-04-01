@@ -27,6 +27,17 @@
     object-fit: contain;
     filter: contrast(110%);
     user-select: none;
+    animation: AImage 1s;
+}
+
+@keyframes AImage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .cardName {

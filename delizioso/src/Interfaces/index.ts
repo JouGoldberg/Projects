@@ -57,3 +57,16 @@ export interface IReservation {
     peopleNumber: string;
     note: string;
 }
+
+export interface ICheckout{
+    firstName: string;
+    lastName: string;
+    number: string;
+    address: string;
+    note: string;
+    orderMethod: string;
+    orderTime: string;
+    paymentMethod: string;
+    shippingLocation: string;
+    shippingAddress: string;
+}

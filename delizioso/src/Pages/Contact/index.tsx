@@ -14,6 +14,14 @@ const Contact = () => {
   const [message, setMessage] = useState<string>('')
 
   const handleSubmit = () : void => {
+
+    if(!firstName.trim() || !lastName.trim() || !subject.trim() || !message.trim()){
+      return;
+    }
+    if(!email.trim() || !email.endsWith('@gmail.com')){
+      return;
+    }
+
     const formObj: IContactForm = {
       firstName: firstName,
       lastName: lastName,

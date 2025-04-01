@@ -16,6 +16,16 @@ const Reservation = () => {
   const [note, setNote] = useState<string>('')
 
   const handleSubmit = () => {
+    if(!name.trim() || !surname.trim() || !note.trim()){
+      return;
+    }
+    if(number.length <= 10 || Number(peopleNumber) < 1){
+      return;
+    }
+    if(!date.trim() || !time.trim()){
+      return;
+    }
+
     const obj: IReservation = {
       name,
       surname,
@@ -49,7 +59,7 @@ const Reservation = () => {
           <input onChange={(e) => setNumber(e.target.value)} value={number} className={`${styles.formInput} ${styles.formNumber}`} type="text" placeholder='Phone number' />
           <input onChange={(e) => setDate(e.target.value)} value={date} className={styles.formInput} type="date" max="2025-04-25" />
           <input onChange={(e) => setTime(e.target.value)} value={time} className={styles.formInput} type="time" />
-          <input onChange={(e) => setPeopleNumber(e.target.value)} value={peopleNumber} className={`${styles.formInput} ${styles.formNumber}`} type="number" placeholder='Number of people' />
+          <input onChange={(e) => setPeopleNumber(e.target.value)} value={peopleNumber} className={`${styles.formInput} ${styles.formNumber}`} type="number" placeholder='Number of people' min={1}/>
           <textarea onChange={(e) => setNote(e.target.value)} value={note} className={styles.formInput} placeholder='Note'></textarea>
         </form>
         <div className={styles.formSubmitDiv}>

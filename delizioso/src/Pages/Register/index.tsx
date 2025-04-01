@@ -16,6 +16,13 @@ const Register = () => {
   const handleSubmit = (e: React.FormEvent): void => {
     e.preventDefault()
 
+    if (!email.trim() || !email.endsWith('@gmail.com')) {
+      return;
+    }
+    if (password.length < 4) {
+      return;
+    }
+
     const formObj: ILoginForm = {
       email,
       password,

@@ -1,26 +1,30 @@
 :root {
-    --primary : #311F09 ;
-    --secondary : #FF8A00 ;
+    --primary: #311F09;
+    --secondary: #FF8A00;
     --tertiary: #3FA72F
 }
 
-.navbar{
+.navbar {
     padding-block: 20px;
 }
+
 .insideNavbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     position: relative;
     user-select: none;
 
 }
+
 .logoLink {
     position: absolute;
     inset: 0px;
 }
+
 .navLinks {
     width: 50%;
     display: flex;
@@ -30,34 +34,38 @@
 .navLink {
     color: var(--primary);
     text-decoration: none;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
-.active{
+
+.active {
     color: var(--secondary);
 }
+
 .navEnd {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .basketImgDiv {
     position: relative;
     user-select: none;
 }
+
 .basketImg {
     width: 24px;
     height: 24px;
     padding: 10px;
     border-radius: 100%;
     border: 1px solid transparent;
-    background-color: rgb(228, 228, 228 , 0);
     cursor: pointer;
     transition: 300ms;
 }
+
 .basketImg:hover {
-    background-color: rgb(128, 128, 128 , 0.1);
+    background-color: rgb(128, 128, 128, 0.1);
 }
 
 .basketNum {
@@ -77,17 +85,48 @@
     border-radius: 100%;
     user-select: none;
 }
+
 .loginLink {
     color: white;
     text-decoration: none;
     background-color: var(--tertiary);
-    font-family:  'poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding: 10px 26px;
-    border-radius:35px;
+    border-radius: 35px;
     transition: 200ms;
 }
+
 .loginLink:hover {
     background-color: #338b25;
+}
+
+.navMenuIcon {
+    padding: 11px;
+    border-radius: 100%;
+    overflow: visible;
+    cursor: pointer;
+    transition: 300ms;
+    display: none;
+}
+
+.navMenuIcon:hover {
+    background-color: rgb(128, 128, 128, 0.1);
+}
+
+@media(max-width:1250px) {
+    .navLinks {
+        display: none;
+    }
+
+    .loginLink {
+        display: none;
+    }
+    .navMenuIcon{
+        display: block;
+    }
+    .navEnd{
+        gap: 5px;
+    }
 }

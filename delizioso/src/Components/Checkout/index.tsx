@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './checkout.module.css'
+import { ICheckout } from '../../Interfaces'
 
 interface IProps {
   setActiveOrder: any
@@ -21,7 +22,23 @@ const Checkout = ({ setActiveOrder }: IProps) => {
   const [shippingAddress, setShippingAddress] = useState<string>('')
 
   const handleOrder = () => {
-    const obj = {
+    if (!firstName.trim() || !lastName.trim()) {
+      return;
+    }
+    if (number.length <= 10) {
+      return;
+    }
+    if (!address.trim() || !address.endsWith('@gmail.com')) {
+      return;
+    }
+    if (!orderMethod.trim() || !orderTime.trim() || !paymentMethod.trim()) {
+      return;
+    }
+    if (!shippingAddress.trim() || !shippingLocation.trim()) {
+      return;
+    }
+
+    const obj: ICheckout = {
       firstName,
       lastName,
       number,
@@ -65,7 +82,7 @@ const Checkout = ({ setActiveOrder }: IProps) => {
           <input onChange={(e) => setFirstName(e.target.value)} value={firstName} className={styles.formInput} type="text" placeholder='First name' />
           <input onChange={(e) => setLastName(e.target.value)} value={lastName} className={styles.formInput} type="text" placeholder='Last name' />
           <input onChange={(e) => setNumber(e.target.value)} value={number} className={styles.formInput} type="text" placeholder='Phone number' />
-          <input onChange={(e) => setAddress(e.target.value)} value={address} className={styles.formInput} type="text" placeholder='Email address' />
+          <input onChange={(e) => setAddress(e.target.value)} value={address} className={styles.formInput} type="email" placeholder='Email address' />
           <textarea onChange={(e) => setNote(e.target.value)} value={note} placeholder='Note'></textarea>
         </form>
 

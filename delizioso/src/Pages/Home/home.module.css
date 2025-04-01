@@ -126,7 +126,7 @@
 }
 
 .welcomeLeft {
-    width: 49%;
+    width: 50%;
     position: relative;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .welcomeRight {
-    width: 42%;
+    width: 41%;
 }
 
 .saladImg {
@@ -162,7 +162,7 @@
 
 .welcomeTitle {
     color: var(--primary);
-    font-size: 85px;
+    font-size: 81px;
     font-family: 'tinos';
     font-weight: 700;
 }
@@ -173,13 +173,13 @@
 
 .welcomeInfo {
     color: #5C4529;
-    margin-block: 20px;
+    margin-block: 25px;
     font-size: 20px;
     font-family: 'poppins';
 }
 
 .welcomeBtn {
-    margin-top: 32px;
+    margin-top: 22px;
     color: white;
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
@@ -226,20 +226,20 @@
 
 .reerveTitle {
     color: var(--primary);
-    font-size: 80px;
+    font-size: 81px;
     font-family: 'tinos';
     font-weight: 700;
 }
 
 .reserveInfo {
     color: #5C4529;
-    margin-block: 23px;
+    margin-block: 25px;
     font-size: 20px;
     font-family: 'poppins';
 }
 
 .reserveBtn {
-    margin-top: 30px;
+    margin-top: 22px;
     color: white;
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
@@ -267,8 +267,8 @@
 }
 
 .leftImg {
-    width: 455px;
-    height: 445px;
+    width: 460px;
+    height: 450px;
     border-radius: 100%;
     object-fit: cover;
     user-select: none;
@@ -333,6 +333,17 @@
     object-fit: cover;
     object-position: top center;
     user-select: none;
+    animation: AImage 1s;
+}
+
+@keyframes AImage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .chefName {
@@ -391,6 +402,7 @@
     background-color: #ca6d04;
     border: 1px solid #ca6d04;
 }
+
 .hideBtn {
     display: none;
 }
@@ -404,6 +416,7 @@
     background: linear-gradient(25deg, rgba(6, 6, 6, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
     border-radius: 70px;
     position: relative;
+    user-select: none;
 }
 
 .insideWeAreOpen {
@@ -411,6 +424,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    user-select: text;
 }
 
 .openTitle {
@@ -420,7 +434,7 @@
 }
 
 .openInfo {
-    margin-top: 19px;
+    margin-top: 16px;
     font-family: 'poppins';
     font-size: 40px;
     font-weight: 500;

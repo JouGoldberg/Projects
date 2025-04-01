@@ -16,7 +16,7 @@ const PopularMenu = (props: IProps) => {
     const [searchParams, setSearchParams] = useSearchParams()
 
     const { addOrderList } = useContext(ThemeContext)
-    const menuItem: string = searchParams.get('menuItem') || 'lunch'
+    const menuItem: string = searchParams.get('menuItem') || 'dinner'
 
     const showMenuItem: number = 6
     const [activeMenuPage, setActiveMenuPage] = useState<number>(1)
@@ -56,7 +56,7 @@ const PopularMenu = (props: IProps) => {
                     {
                         showMenu ?
                             showMenu.slice(startMenuItem, endMenuItem).map(({ name, image, desc, price, id }) => {
-                                return <div className={styles.menuCard} key={id}>
+                                return <div title={name} className={styles.menuCard} key={id}>
                                     <img className={styles.cardImage} src={image} />
                                     <p className={styles.cardName}>{name}</p>
                                     <p className={styles.cardDesc}>{desc}</p>

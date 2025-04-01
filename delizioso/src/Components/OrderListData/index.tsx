@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import styles from './orderListData.module.css'
-import { IMenuItem, IOrderList, TOrderList } from '../../Interfaces'
+import { IMenuItem } from '../../Interfaces'
 import { ThemeContext } from '../../Context'
 import Pagination from '../Pagination'
 import { useSearchParams } from 'react-router-dom'
@@ -17,10 +17,16 @@ const OrderListData = ({ data }: IProps) => {
     const [activeMenuPage, setActiveMenuPage] = useState<number>(1)
     const startMenuItem: number = activeMenuPage * showMenuItem - showMenuItem
     const endMenuItem: number = activeMenuPage * showMenuItem
-
+    
     useEffect(() => {
         setActiveMenuPage(1)
     }, [searchParams.get('menuItem')])
+
+    const [key,setKey] = useState<any>(Math.random())
+
+    useEffect(() => {
+        setKey(Math.random())
+    },[data,activeMenuPage])
 
     return (
         <div>
@@ -28,8 +34,8 @@ const OrderListData = ({ data }: IProps) => {
                 {
                     data ?
                         data.slice(startMenuItem, endMenuItem).map(({ name, image, desc, price, id }, i) => {
-                            return <div className={styles.menuCard} key={i}>
-                                <img className={styles.cardImage} src={image} />
+                            return <div title={name} className={styles.menuCard} key={i}>
+                                <img key={key} className={styles.cardImage} src={image} />
                                 <p className={styles.cardName}>{name}</p>
                                 <p className={styles.cardDesc}>{desc}</p>
                                 <div className={styles.cardFoot}>

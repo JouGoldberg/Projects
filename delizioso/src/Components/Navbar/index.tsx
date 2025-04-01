@@ -10,6 +10,7 @@ const Navbar = () => {
 
     const { orderList } = useContext<any>(ThemeContext)
     const orderListLength: number = orderList.reduce((sum: number, e: IOrderList) => sum += e.pieces, 0)
+
     return (
         <div className={styles.navbar}>
             <div className="container">
@@ -35,6 +36,7 @@ const Navbar = () => {
                             <img className={styles.basketImg} src='/basket.svg' alt="Basket_Image" />
                         </div>
                         <Link className={styles.loginLink} to='/login'>Log in</Link>
+                        <img className={styles.navMenuIcon} src="/navMenu.svg" alt="Menu_Icon" />
                     </div>
                 </div>
             </div>
