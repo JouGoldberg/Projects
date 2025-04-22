@@ -1,27 +1,32 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F;
+}
 
 .panigation {
-    margin-top: 75px;
+    margin-top: clamp(0px, 4.88vw, 122px);
     display: flex;
     justify-content: center;
 }
 
 .insidePanigation {
     display: flex;
-    gap: 8px;
+    gap: clamp(0px, 0.52vw, 13px);
     align-items: center;
 }
 
 .navBtn {
-    margin-inline: 2px;
-    width: 47px;
-    height: 47px;
-    padding-bottom: 2px;
+    margin-inline: clamp(0px, 0.13vw, 3.25px);
+    width: clamp(0px, 3.06vw, 76.5px);
+    height: clamp(0px, 3.06vw, 76.5px);
+    padding-bottom: clamp(0px, 0.13vw, 3.25px);
     color: white;
     background-color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 13px;
+    border: clamp(0px, 0.065vw, 1.625px) solid var(--primary);
+    border-radius: clamp(0px, 0.85vw, 21.25px);
     cursor: pointer;
-    font-size: 24px;
+    font-size: clamp(0px, 1.56vw, 39px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +37,12 @@
 .panigationNum {
     color: var(--secondary);
     background-color: rgb(255, 138, 0, 0.1);
-    border: 1px solid rgb(255, 138, 0, 0);
-    border-radius: 13px;
-    width: 47px;
-    height: 47px;
+    border: clamp(0px, 0.065vw, 1.625px) solid rgb(255, 138, 0, 0);
+    border-radius: clamp(0px, 0.85vw, 21.25px);
+    width: clamp(0px, 3.06vw, 76.5px);
+    height: clamp(0px, 3.06vw, 76.5px);
     font-family: 'poppins';
-    font-size: 17px;
+    font-size: clamp(0px, 1.11vw, 27.75px);
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -50,13 +55,51 @@
 .activeMenuPage {
     color: white;
     background-color: var(--secondary);
-    border: 1px solid var(--secondary);
+    border: clamp(0px, 0.065vw, 1.625px) solid var(--secondary);
 }
 
 .panigationNum:hover {
-    border: 1px solid rgb(255, 138, 0, 0.5);
+    border: clamp(0px, 0.065vw, 1.625px) solid rgb(255, 138, 0, 0.5);
 }
 
 .navBtn:hover {
     background-color: #352a16;
+}
+
+
+@media(max-width:650px) {
+    .panigation {
+        margin-top: 11.22vw;
+    }
+    
+    .insidePanigation {
+        gap: 1.20vw;
+    }
+    
+    .navBtn {
+        margin-inline: 0.30vw;
+        width: 7.04vw;
+        height: 7.04vw;
+        padding-bottom: 0.30vw;
+        border: 0.15vw solid var(--primary);
+        border-radius: 1.96vw;
+        font-size: 3.59vw;
+    }
+    
+    .panigationNum {
+        border: 0.15vw solid rgb(255, 138, 0, 0);
+        border-radius: 1.96vw;
+        width: 7.04vw;
+        height: 7.04vw;
+        font-size: 2.55vw;
+    }
+    
+    .activeMenuPage {
+        border: 0.15vw solid var(--secondary);
+    }
+    
+    .panigationNum:hover {
+        border: 0.15vw solid rgb(255, 138, 0, 0.5);
+    }
+    
 }

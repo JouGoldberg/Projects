@@ -5,7 +5,7 @@
 }
 
 .home {
-    margin-top: 95px;
+    margin-top: clamp(0px, 6.18vw, 123.6px);
 }
 
 .restaurant {
@@ -18,59 +18,59 @@
     width: min-content;
     color: var(--secondary);
     background-color: rgb(255, 138, 0, 0.1);
-    border-radius: 30px;
-    padding: 10px 28px;
+    border-radius: clamp(0px, 1.95vw, 44.07px);
+    padding: clamp(0px, 0.65vw, 14.69px) clamp(0px, 1.82vw, 41.13px);
     font-family: 'raleway', sans-serif;
-    font-size: 18px;
+    font-size: clamp(0px, 1.17vw, 26.44px);
 }
 
 .restaurantTitle {
-    margin-block: 20px;
+    margin-block: clamp(0px, 1.3vw, 29.38px);
     color: var(--primary);
     font-family: 'raleway', sans-serif;
-    font-size: 85px;
+    font-size: clamp(0px, 5.6vw, 126.56px);
     font-weight: 700;
 }
 
 .restaurantInfo {
     color: #5C4529;
-    font-size: 20px;
+    font-size: clamp(0px, 1.3vw, 29.38px);
     font-family: 'poppins', sans-serif;
 }
 
 .restaurantButtons {
-    margin-top: 55px;
+    margin-top: clamp(0px, 3.58vw, 80.91px);
     display: flex;
-    gap: 12px;
+    gap: clamp(0px, 0.78vw, 17.63px);
 }
 
 .restaurantButtons button {
     color: white;
-    width: 190px;
-    padding-block: 16px;
-    font-size: 20px;
-    border-radius: 30px;
+    width: clamp(0px, 12.37vw, 279.56px);
+    padding-block: clamp(0px, 1.04vw, 23.5px);
+    font-size: clamp(0px, 1.3vw, 29.38px);
+    border-radius: clamp(0px, 1.95vw, 44.07px);
     cursor: pointer;
     transition: 200ms;
 }
 
 .restaurantOrder {
-    border: 1px solid var(--secondary);
+    border: clamp(0px, 0.065vw, 1.47px) solid var(--secondary);
     background-color: var(--secondary);
 }
 
 .restaurantReservation {
-    border: 1px solid var(--tertiary);
+    border: clamp(0px, 0.065vw, 1.47px) solid var(--tertiary);
     background-color: var(--tertiary);
 }
 
 .restaurantOrder:hover {
     background-color: #ca6d04;
-    border: 1px solid #ca6d04;
+    border: clamp(0px, 0.065vw, 1.47px) solid #ca6d04;
 }
 
 .restaurantReservation:hover {
-    border: 1px solid #338b25;
+    border: clamp(0px, 0.065vw, 1.47px) solid #338b25;
     background-color: #338b25;
 }
 
@@ -114,8 +114,8 @@
 /* ----------> Welcome to Delizioso  <----------*/
 
 .welcomeDelizioso {
-    margin-top: 130px;
-    padding-block: 100px;
+    margin-top: clamp(0px, 8.46vw, 191.2px);
+    padding-block: clamp(0px, 6.51vw, 130px);
     background-color: rgb(63, 198, 110, 0.1);
 }
 
@@ -132,21 +132,21 @@
 
 .leaf1,
 .leaf2 {
-    position: absolute;
     z-index: 1;
+    position: absolute;
     user-select: none;
+    width: 20%;
 }
 
 .leaf1 {
     top: 60%;
-    left: -20px;
+    left: -3%;
     transform: rotate(120deg);
-    width: 140px;
 }
 
 .leaf2 {
-    right: 5px;
-    top: 80px;
+    top: 15%;
+    right: 0;
     transform: rotate(250deg);
 }
 
@@ -162,7 +162,7 @@
 
 .welcomeTitle {
     color: var(--primary);
-    font-size: 81px;
+    font-size: clamp(0px, 5.27vw, 119.10px);
     font-family: 'tinos';
     font-weight: 700;
 }
@@ -173,27 +173,27 @@
 
 .welcomeInfo {
     color: #5C4529;
-    margin-block: 25px;
-    font-size: 20px;
+    margin-block: clamp(0px, 1.6vw, 36.84px);
+    font-size: clamp(0px, 1.3vw, 29.38px);
     font-family: 'poppins';
 }
 
 .welcomeBtn {
-    margin-top: 22px;
+    margin-top: clamp(0px, 1.4vw, 32.32px);
     color: white;
     background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    width: 190px;
-    padding-block: 16px;
-    font-size: 20px;
-    border-radius: 30px;
+    border: clamp(0px, 0.065vw, 1.47px) solid var(--secondary);
+    width: clamp(0px, 12.37vw, 279.56px);
+    padding-block: clamp(0px, 1.04vw, 23.5px);
+    font-size: clamp(0px, 1.3vw, 29.38px);
+    border-radius: clamp(0px, 1.95vw, 44.07px);
     cursor: pointer;
     transition: 200ms;
 }
 
 .welcomeBtn:hover {
     background-color: #ca6d04;
-    border: 1px solid #ca6d04;
+    border: clamp(0px, 0.065vw, 1.47px) solid #ca6d04;
 }
 
 /* ----------> Reverse Table <---------------------- */
@@ -498,4 +498,89 @@
     object-fit: cover;
     z-index: -1;
     border-radius: 70px;
+}
+
+
+@media(max-width:650px) {
+    .restaurant {
+        flex-direction: column;
+        gap: 15vw;
+    }
+
+    .restaurantLeft,
+    .restaurantRight {
+        width: 100%;
+    }
+
+    .restaurantHeading {
+        border-radius: 4.68vw;
+        padding: 1.56vw 4.37vw;
+        font-size: 2.81vw;
+    }
+
+    .restaurantTitle {
+        margin-block: 3.12vw;
+        font-size: 13.44vw;
+    }
+
+    .restaurantInfo {
+        font-size: 3.12vw;
+    }
+
+    .restaurantButtons {
+        margin-top: 8.59vw;
+        gap: 1.87vw;
+    }
+
+    .restaurantButtons button {
+        width: 31vw;
+        padding-block: 2.575vw;
+        font-size: 3.2136vw;
+        border-radius: 4.8204vw;
+        
+    }
+
+    .restaurantOrder {
+        border: 0.156vw solid var(--secondary);
+    }
+
+    .restaurantReservation {
+        border: 0.156vw solid var(--tertiary);
+    }
+
+    /* --------> Welcome to Delizioso <------- */
+
+    .insideWelcome {
+        flex-direction: column-reverse;
+        gap: 7.5vw;
+    }
+
+    .welcomeLeft,
+    .welcomeRight {
+        width: 100%;
+    }
+
+    .welcomeDelizioso {
+        margin-top: 15.5vw;
+        padding-block: 8vw 9.3vw;
+    }
+    
+    .welcomeTitle {
+        font-size: 13vw;
+    }
+    
+    .welcomeInfo {
+        margin-block: 3.8vw;
+        font-size: 3.14vw;
+    }
+    
+    .welcomeBtn {
+        margin-top: 3.55vw;
+        border: 0.156vw solid var(--secondary);
+        width: 31vw;
+        padding-block: 2.575vw;
+        font-size: 3.2136vw;
+        border-radius: 4.8204vw;
+    }
+
 }

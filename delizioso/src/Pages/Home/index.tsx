@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <div className={styles.welcomeRight}>
               <h2 className={styles.welcomeTitle}>Welcome to <br /> <span className={styles.orange}>delizioso</span></h2>
-              <p className={styles.welcomeInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
+              <p className={styles.welcomeInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing<br /> elit. Facilisis ultricies at eleifend proin. Congue nibh<br /> nulla malesuada ultricies nec quam </p>
               <button onClick={() => navigate('/menu')} className={styles.welcomeBtn}>See our menu</button>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
 
       <PopularMenu title="Our popular menu" />
 
-      <div className={styles.reserveTable}>
+      {/* <div className={styles.reserveTable}>
         <div className={styles.insideReserve}>
           <div className={styles.reserveLeft}>
             <div className={styles.insideLeft}>
@@ -77,9 +77,9 @@ const Home = () => {
             <button onClick={() => navigate('/reservation')} className={styles.reserveBtn}>Reservation</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles.chef}>
+      {/* <div className={styles.chef}>
         <div className="container">
           <h2 className={styles.chefTitle}>Our greatest chef</h2>
           <div className={styles.cooks}>
@@ -96,9 +96,9 @@ const Home = () => {
           <button onClick={() => setEnd(pre => pre + 3)} className={`${hideBtn ? styles.hideBtn : ''} ${styles.chefBtn}`}>View all</button>
           <button onClick={() => setEnd(3)} className={`${!hideBtn ? styles.hideBtn : ''} ${styles.chefHideBtn}`}><FontAwesomeIcon icon={faChevronUp} /></button>
         </div>
-      </div>
+      </div> */}
 
-      <div className='container'>
+      {/* <div className='container'>
         <div className={styles.weAreOpen}>
           <div className={styles.insideWeAreOpen}>
             <h2 className={styles.openTitle}>we are open from</h2>
@@ -115,7 +115,7 @@ const Home = () => {
           </div>
           <img className={styles.weAreOpenImg} src="/weAreOpenImg.jpg" alt="Spaghetti" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

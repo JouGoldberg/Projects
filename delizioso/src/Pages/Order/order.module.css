@@ -46,8 +46,7 @@
 }
 
 .menuTabs p:not(.activeItem):hover {
-    border: 1px solid rgba(208, 204, 199, 0.3);
-    box-shadow: 0px 0px 10px rgb(235, 235, 235);
+    background-color: rgba(136, 135, 132, 0.1);
 }
 
 .menuName {

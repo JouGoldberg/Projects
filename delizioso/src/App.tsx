@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Components/Navbar'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './Pages/Home'
@@ -20,8 +20,14 @@ const App = () => {
     window.scrollTo(0, 0);
 }, [pathname]);
 
+const [resize,setResize] = useState(window.innerWidth)
+window.onresize = () => {
+  setResize(window.innerWidth)
+}
+
   return (
     <div>
+      {/* <h1 style={{backgroundColor:'red' , color:'white' , padding:'10px' , opacity:'0.8',position:"fixed" , top:"10px",fontSize:"17px" , right:'10px'}}>{resize}</h1> */}
       {hideLayout || <Navbar />}
 
       <Routes>
@@ -36,7 +42,7 @@ const App = () => {
         <Route path='*' element={<NotFound />} />
       </Routes>
 
-      {hideLayout || <Footer />}
+      {/* {hideLayout || <Footer />} */}
     </div>
   )
 }

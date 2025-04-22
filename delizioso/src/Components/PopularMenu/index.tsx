@@ -39,12 +39,26 @@ const PopularMenu = (props: IProps) => {
         setActiveMenuPage(1)
     }, [menuItem])
 
-    const marginTop: string = location.pathname == '/menu' ? '60px' : '70px'
+    const [resize, setResize] = useState<number>(window.innerWidth)
+
+    const handleResize = () => {
+        setResize(window.innerWidth)
+    }
+
+    window.addEventListener('resize' , handleResize)
+
+    useEffect(() => {
+        handleResize()
+    }, [])
+
+    const marginTop: string = location.pathname == '/menu' ? 'clamp(0px, 3.9vw, 78px)' : 'clamp(25px, 4.4vw, 95px)'
 
     return (
         <div style={{ marginTop: marginTop }} className={styles.popularMenu}>
             <div className="container">
                 <h2 className={styles.title}>{props.title}</h2>
+            </div>
+            <div className={resize > 650 ? 'container' : ''}>
                 <div className={styles.menuTabs}>
                     {
                         menuTabs.map((e, i) => {
@@ -52,6 +66,8 @@ const PopularMenu = (props: IProps) => {
                         })
                     }
                 </div>
+            </div>
+            <div className="container">
                 <div className={styles.menu}>
                     {
                         showMenu ?

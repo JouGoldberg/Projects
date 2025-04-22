@@ -17,7 +17,6 @@
 .logo {
     position: relative;
     user-select: none;
-
 }
 
 .logoLink {
@@ -109,17 +108,24 @@
     cursor: pointer;
     transition: 300ms;
     display: none;
+    user-select: none;
 }
 
 .navMenuIcon:hover {
     background-color: rgb(128, 128, 128, 0.1);
 }
+.resNav {
+    background-color: white;
+    opacity: 0.4;
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+} 
 
 @media(max-width:1250px) {
     .navLinks {
         display: none;
     }
-
     .loginLink {
         display: none;
     }
@@ -128,5 +134,32 @@
     }
     .navEnd{
         gap: 5px;
+    }
+}
+
+@media(max-width:380px){
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .basketImg{
+        width: 20px;
+        height: 20px;
+        padding: 7px;
+    }
+    .basketNum{
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+        top: 3px;
+        right: 0;
+    }
+    .navMenuIcon{
+        width: 20px;
+        height: 20px;
+        padding: 7px;
     }
 }
