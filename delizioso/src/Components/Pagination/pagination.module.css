@@ -73,33 +73,32 @@
     }
     
     .insidePanigation {
-        gap: 1.20vw;
+        gap: 1.2vw;
     }
     
     .navBtn {
-        margin-inline: 0.30vw;
-        width: 7.04vw;
-        height: 7.04vw;
-        padding-bottom: 0.30vw;
-        border: 0.15vw solid var(--primary);
-        border-radius: 1.96vw;
-        font-size: 3.59vw;
+        margin-inline: 0.3vw;
+        width: 8.09vw;
+        height: 8.09vw;
+        padding-bottom: 0.35vw;
+        border: 0.17vw solid var(--primary);
+        border-radius: 2.25vw;
+        font-size: 4.2vw;
     }
     
     .panigationNum {
-        border: 0.15vw solid rgb(255, 138, 0, 0);
-        border-radius: 1.96vw;
-        width: 7.04vw;
-        height: 7.04vw;
-        font-size: 2.55vw;
+        border: 0.17vw solid rgb(255, 138, 0, 0);
+        border-radius: 2.25vw;
+        width: 8.09vw;
+        height: 8.09vw;
+        font-size: 3.1vw;
     }
     
     .activeMenuPage {
-        border: 0.15vw solid var(--secondary);
+        border: 0.17vw solid var(--secondary);
     }
     
     .panigationNum:hover {
-        border: 0.15vw solid rgb(255, 138, 0, 0.5);
+        border: 0.17vw solid rgb(255, 138, 0, 0.5);
     }
-    
 }

@@ -175,9 +175,9 @@
 
     .cardOrder {
         border: 0.127vw solid var(--secondary);
-        width: 21.287vw;
+        width: 21vw;
         padding-block: 1.943vw;
-        font-size: 2.3vw;
+        font-size: 2.45vw;
         border-radius: 3.657vw;
         
     }
