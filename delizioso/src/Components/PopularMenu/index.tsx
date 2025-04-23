@@ -78,7 +78,7 @@ const PopularMenu = (props: IProps) => {
                                     <p className={styles.cardDesc}>{desc}</p>
                                     <div className={styles.cardFoot}>
                                         <p className={styles.cardPrice}>${price}</p>
-                                        <button onClick={() => handleOrder({ name, image, desc, price, id })} className={styles.cardOrder}>Order now</button>
+                                        <button onClick={() => handleOrder({ name, image, desc, price, id })} className={styles.cardOrder}>+</button>
                                     </div>
                                 </div>
                             }) :

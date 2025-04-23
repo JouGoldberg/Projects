@@ -528,16 +528,15 @@
     }
 
     .restaurantButtons {
-        margin-top: 8.59vw;
+        margin-top: 8.2vw;
         gap: 1.87vw;
     }
 
     .restaurantButtons button {
-        width: 31vw;
-        padding-block: 2.575vw;
-        font-size: 3.2136vw;
-        border-radius: 4.8204vw;
-        
+        width: 31.134vw;
+        padding-block: 2.72vw;
+        font-size: 3.2vw;
+        border-radius: 4.8vw;                    
     }
 
     .restaurantOrder {
@@ -561,8 +560,8 @@
     }
 
     .welcomeDelizioso {
-        margin-top: 15.5vw;
-        padding-block: 8vw 9.3vw;
+        margin-top: 15.45vw;
+        padding-block: 8vw ;
     }
     
     .welcomeTitle {
@@ -575,12 +574,12 @@
     }
     
     .welcomeBtn {
-        margin-top: 3.55vw;
+        margin-top: 3.3vw;
         border: 0.156vw solid var(--secondary);
-        width: 31vw;
-        padding-block: 2.575vw;
-        font-size: 3.2136vw;
-        border-radius: 4.8204vw;
+        width: 31.134vw;
+        padding-block: 2.72vw;
+        font-size: 3.2vw;
+        border-radius: 4.8vw;                
     }
 
 }
