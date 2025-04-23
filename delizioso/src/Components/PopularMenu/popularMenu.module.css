@@ -161,7 +161,7 @@
     }
 
     .cardDesc {
-        margin-top: 1.8vw;
+        margin-top: 1.735vw;
         font-size: 3vw;
 
         display: -webkit-box;
@@ -172,7 +172,7 @@
     }
 
     .cardFoot {
-        margin-top: 3vw;
+        margin-top: 2.94vw;
     }
 
     .cardPrice {
@@ -181,9 +181,9 @@
 
     .cardOrder {
         border-radius: 100%;
-        width: 7.77vw;
-        height: 7.77vw;
-        font-size: 6.07vw;        
+        width: 7.85vw;
+        height: 7.85vw;
+        font-size: 6.1vw;        
         font-weight: 100;
         font-family: 'sans-serif';
         display: flex;

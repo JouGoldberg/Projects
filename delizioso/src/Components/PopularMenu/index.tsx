@@ -51,7 +51,7 @@ const PopularMenu = (props: IProps) => {
         handleResize()
     }, [])
 
-    const marginTop: string = location.pathname == '/menu' ? 'clamp(0px, 3.9vw, 78px)' : 'clamp(25px, 4.4vw, 95px)'
+    const marginTop: string = location.pathname == '/menu' ? 'clamp(0px, 3.9vw, 78px)' : 'clamp(24px, 4.4vw, 95px)'
 
     return (
         <div style={{ marginTop: marginTop }} className={styles.popularMenu}>
