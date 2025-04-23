@@ -157,12 +157,12 @@
     .cardName {
         width: 34vw;
         margin-top: 2.44vw;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     .cardDesc {
-        margin-top: 1.6vw;
-        font-size: 3vw;
+        margin-top: 1.3vw;
+        font-size: 3.1vw;
 
         display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -172,17 +172,17 @@
     }
 
     .cardFoot {
-        margin-top: 2.845vw;
+        margin-top: 2.35vw;
     }
 
     .cardPrice {
-        font-size: 4.5vw;
+        font-size: 4.6vw;
     }
 
     .cardOrder {
         border-radius: 100%;
-        width: 7.9vw;
-        height: 7.9vw;
+        width: 8.2vw;
+        height: 8.2vw;
         font-size: 6.13vw;        
         font-weight: 100;
         font-family: 'sans-serif';
@@ -207,6 +207,6 @@
         padding-block: 2.533vw;
         border-radius: 5.917vw;
         border: 0.158vw solid transparent;
-        font-size: 2.952vw;
+        font-size: 3.1vw;
     }
 }
