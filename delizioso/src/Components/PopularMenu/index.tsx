@@ -11,6 +11,8 @@ interface IProps {
 }
 
 const PopularMenu = (props: IProps) => {
+    const { resize } = useContext(ThemeContext)
+
     const navigate = useNavigate()
     const location = useLocation()
     const [searchParams, setSearchParams] = useSearchParams()
@@ -39,19 +41,7 @@ const PopularMenu = (props: IProps) => {
         setActiveMenuPage(1)
     }, [menuItem])
 
-    const [resize, setResize] = useState<number>(window.innerWidth)
-
-    const handleResize = () => {
-        setResize(window.innerWidth)
-    }
-
-    window.addEventListener('resize' , handleResize)
-
-    useEffect(() => {
-        handleResize()
-    }, [])
-
-    const marginTop: string = location.pathname == '/menu' ? 'clamp(0px, 3.9vw, 78px)' : 'clamp(24px, 4.4vw, 95px)'
+    const marginTop: string = location.pathname == '/menu' ? '3.9vw' : 'clamp(24px, 4.2vw, 4.2vw)'
 
     return (
         <div style={{ marginTop: marginTop }} className={styles.popularMenu}>

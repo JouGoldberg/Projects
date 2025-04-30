@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import styles from './home.module.css'
 import PopularMenu from '../../Components/PopularMenu'
 import { chef } from '../../Data'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from 'react-router-dom';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Home = () => {
+
   useEffect(() => {
     document.title = 'Delizioso | Home'
   }, [])
@@ -58,7 +59,7 @@ const Home = () => {
 
       <PopularMenu title="Our popular menu" />
 
-      {/* <div className={styles.reserveTable}>
+      <div className={styles.reserveTable}>
         <div className={styles.insideReserve}>
           <div className={styles.reserveLeft}>
             <div className={styles.insideLeft}>
@@ -71,15 +72,15 @@ const Home = () => {
               <img src="/reserveImg2.jpg" alt="Reserve_Image" />
             </div>
           </div>
-          <div className={styles.reserveRight}>
-            <h2 className={styles.reerveTitle}>Let's reserve<br /> <span className={styles.orange}>a table</span></h2>
-            <p className={styles.reserveInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-            <button onClick={() => navigate('/reservation')} className={styles.reserveBtn}>Reservation</button>
+            <div className={styles.reserveRight}>
+              <h2 className={styles.reserveTitle}>Let's reserve<br /> <span className={styles.orange}>a table</span></h2>
+              <p className={styles.reserveInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
+              <button onClick={() => navigate('/reservation')} className={styles.reserveBtn}>Reservation</button>
+            </div>
           </div>
-        </div>
-      </div> */}
+      </div>
 
-      {/* <div className={styles.chef}>
+      <div className={styles.chef}>
         <div className="container">
           <h2 className={styles.chefTitle}>Our greatest chef</h2>
           <div className={styles.cooks}>
@@ -96,7 +97,7 @@ const Home = () => {
           <button onClick={() => setEnd(pre => pre + 3)} className={`${hideBtn ? styles.hideBtn : ''} ${styles.chefBtn}`}>View all</button>
           <button onClick={() => setEnd(3)} className={`${!hideBtn ? styles.hideBtn : ''} ${styles.chefHideBtn}`}><FontAwesomeIcon icon={faChevronUp} /></button>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className='container'>
         <div className={styles.weAreOpen}>

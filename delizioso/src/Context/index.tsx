@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { IOrderList, TOrderList } from "../Interfaces";
 
 export const ThemeContext = createContext<any>(null)
@@ -36,8 +36,19 @@ export const ThemeContextProvider = ({ children }: { children: React.ReactNode }
         }
     }
 
+    const [resize, setResize] = useState<number>(window.innerWidth)
+
+    const handleResize = () => {
+        setResize(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+    useEffect(() => {
+        handleResize()
+    }, [])
+
     return (
-        <ThemeContext.Provider value={{ orderList, setOrderList, addOrderList , deleteListItem }}>
+        <ThemeContext.Provider value={{ orderList, setOrderList, addOrderList, deleteListItem, resize }}>
             {children}
         </ThemeContext.Provider>
     )

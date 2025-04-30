@@ -1,36 +1,36 @@
 :root {
     --primary: #311F09;
     --secondary: #FF8A00;
-    --tertiary: #3FA72F
+    --tertiary: #3FA72F;
 }
 
 .title {
     color: var(--primary);
-    font-size: clamp(0px, 5.21vw, 119.80px);
+    font-size: 5.21vw;
     font-weight: 700;
     font-family: 'tinos';
     text-align: center;
 }
 
 .menuTabs {
-    margin-top: clamp(0px, 5vw, 110px);
+    margin-top: 5vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: clamp(0px, 1.3vw, 29.95px);
+    gap: 1.3vw;
 }
 
 .menuTabs p {
-    padding-block: clamp(0px, 1.11vw, 25.84px);
+    padding-block: 1.11vw;
     background-color: rgba(208, 204, 199, 0.1);
-    border-radius: clamp(0px, 2.6vw, 59.89px);
+    border-radius: 2.6vw;
     font-family: 'poppins';
     text-align: center;
     cursor: pointer;
     transition: 200ms;
     user-select: none;
     color: rgba(49, 31, 9, 1);
-    border: clamp(0px, 0.07vw, 1.58px) solid transparent;
-    font-size: clamp(0px, 1.3vw, 29.95px);
+    border: 0.07vw solid transparent;
+    font-size: 1.3vw;
     white-space: nowrap;
 }
 
@@ -45,17 +45,17 @@
 
 .menu {
     width: 100%;
-    margin-top: clamp(0px, 3.91vw, 90.75px);
+    margin-top: 3.91vw;
     display: grid;
-    gap: clamp(0px, 1.63vw, 37.24px);
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.63vw;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
 
 .menuCard {
-    padding-block: clamp(0px, 1.95vw, 44.92px) clamp(0px, 2.08vw, 47.92px);
-    padding-inline: clamp(0px, 2.28vw, 53.91px);
+    padding-block: 1.95vw 2.08vw;
+    padding-inline: 2.28vw;
     background-color: rgba(208, 204, 199, 0.1);
-    border-radius: clamp(0px, 4.56vw, 107.81px);
+    border-radius: 4.56vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +63,7 @@
 
 .cardImage {
     width: 100%;
-    height: clamp(0px, 16.28vw, 389.33px);
+    height: 16.28vw;
     object-fit: contain;
     filter: contrast(110%);
     user-select: none;
@@ -74,18 +74,17 @@
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
 .cardName {
-    width: clamp(0px, 20.83vw, 500.13px);
-    margin-top: clamp(0px, 1.5vw, 35.94px);
+    width: 20.83vw;
+    margin-top: 1.5vw;
     text-align: center;
     color: #342717;
-    font-size: clamp(0px, 1.95vw, 46.72px);
+    font-size: 1.95vw;
     font-weight: 600;
     font-family: 'poppins';
     white-space: nowrap;
@@ -94,15 +93,15 @@
 }
 
 .cardDesc {
-    margin-top: clamp(0px, 0.98vw, 23.60px);
+    margin-top: 0.98vw;
     color: rgb(52, 39, 23, 0.8);
     text-align: center;
-    font-size: clamp(0px, 1.11vw, 26.45px);
+    font-size: 1.11vw;
     font-family: 'poppins';
 }
 
 .cardFoot {
-    margin-top: clamp(0px, 2.28vw, 53.91px);
+    margin-top: 2.28vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -111,7 +110,7 @@
 
 .cardPrice {
     color: var(--primary);
-    font-size: clamp(0px, 1.95vw, 46.72px);
+    font-size: 1.95vw;
     font-weight: 600;
     font-family: 'poppins';
 }
@@ -119,11 +118,11 @@
 .cardOrder {
     color: white;
     background-color: var(--secondary);
-    border: clamp(0px, 0.07vw, 1.58px) solid var(--secondary);
-    width: clamp(0px, 11.39vw, 272.53px);
-    padding-block: clamp(0px, 1.04vw, 24.85px);
-    font-size: clamp(0px, 1.17vw, 27.85px);
-    border-radius: clamp(0px, 1.95vw, 46.72px);
+    border: 0.07vw solid var(--secondary);
+    width: 11.39vw;
+    padding-block: 1.04vw;
+    font-size: 1.17vw;
+    border-radius: 1.95vw;
     cursor: pointer;
     transition: 200ms;
     user-select: none;
@@ -131,7 +130,7 @@
 
 .cardOrder:hover {
     background-color: #ca6d04;
-    border: clamp(0px, 0.07vw, 1.58px) solid #ca6d04;
+    border: 0.07vw solid #ca6d04;
 }
 
 @media(max-width:650px) {

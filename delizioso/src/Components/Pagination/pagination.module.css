@@ -5,28 +5,28 @@
 }
 
 .panigation {
-    margin-top: clamp(0px, 4.88vw, 122px);
+    margin-top: 4.88vw;
     display: flex;
     justify-content: center;
 }
 
 .insidePanigation {
     display: flex;
-    gap: clamp(0px, 0.52vw, 13px);
+    gap: 0.52vw;
     align-items: center;
 }
 
 .navBtn {
-    margin-inline: clamp(0px, 0.13vw, 3.25px);
-    width: clamp(0px, 3.06vw, 76.5px);
-    height: clamp(0px, 3.06vw, 76.5px);
-    padding-bottom: clamp(0px, 0.13vw, 3.25px);
+    margin-inline: 0.13vw;
+    width: 3.06vw;
+    height: 3.06vw;
+    padding-bottom: 0.13vw;
     color: white;
     background-color: var(--primary);
-    border: clamp(0px, 0.065vw, 1.625px) solid var(--primary);
-    border-radius: clamp(0px, 0.85vw, 21.25px);
+    border: 0.065vw solid var(--primary);
+    border-radius: 0.85vw;
     cursor: pointer;
-    font-size: clamp(0px, 1.56vw, 39px);
+    font-size: 1.56vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,12 +37,12 @@
 .panigationNum {
     color: var(--secondary);
     background-color: rgb(255, 138, 0, 0.1);
-    border: clamp(0px, 0.065vw, 1.625px) solid rgb(255, 138, 0, 0);
-    border-radius: clamp(0px, 0.85vw, 21.25px);
-    width: clamp(0px, 3.06vw, 76.5px);
-    height: clamp(0px, 3.06vw, 76.5px);
+    border: 0.065vw solid rgb(255, 138, 0, 0);
+    border-radius: 0.85vw;
+    width: 3.06vw;
+    height: 3.06vw;
     font-family: 'poppins';
-    font-size: clamp(0px, 1.11vw, 27.75px);
+    font-size: 1.11vw;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -55,11 +55,11 @@
 .activeMenuPage {
     color: white;
     background-color: var(--secondary);
-    border: clamp(0px, 0.065vw, 1.625px) solid var(--secondary);
+    border: 0.065vw solid var(--secondary);
 }
 
 .panigationNum:hover {
-    border: clamp(0px, 0.065vw, 1.625px) solid rgb(255, 138, 0, 0.5);
+    border: 0.065vw solid rgb(255, 138, 0, 0.5);
 }
 
 .navBtn:hover {

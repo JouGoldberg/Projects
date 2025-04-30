@@ -5,7 +5,7 @@
 }
 
 .home {
-    margin-top: clamp(0px, 6.18vw, 123.6px);
+    margin-top: 6.18vw;
 }
 
 .restaurant {
@@ -17,60 +17,60 @@
 .restaurantHeading {
     width: min-content;
     color: var(--secondary);
-    background-color: rgb(255, 138, 0, 0.1);
-    border-radius: clamp(0px, 1.95vw, 44.07px);
-    padding: clamp(0px, 0.65vw, 14.69px) clamp(0px, 1.82vw, 41.13px);
+    background-color: rgba(255, 138, 0, 0.1);
+    border-radius: 1.95vw;
+    padding: 0.65vw 1.82vw;
     font-family: 'raleway', sans-serif;
-    font-size: clamp(0px, 1.17vw, 26.44px);
+    font-size: 1.17vw;
 }
 
 .restaurantTitle {
-    margin-block: clamp(0px, 1.3vw, 29.38px);
+    margin-block: 1.3vw;
     color: var(--primary);
     font-family: 'raleway', sans-serif;
-    font-size: clamp(0px, 5.6vw, 126.56px);
+    font-size: 5.6vw;
     font-weight: 700;
 }
 
 .restaurantInfo {
     color: #5C4529;
-    font-size: clamp(0px, 1.3vw, 29.38px);
+    font-size: 1.3vw;
     font-family: 'poppins', sans-serif;
 }
 
 .restaurantButtons {
-    margin-top: clamp(0px, 3.58vw, 80.91px);
+    margin-top: 3.58vw;
     display: flex;
-    gap: clamp(0px, 0.78vw, 17.63px);
+    gap: 0.78vw;
 }
 
 .restaurantButtons button {
     color: white;
-    width: clamp(0px, 12.37vw, 279.56px);
-    padding-block: clamp(0px, 1.04vw, 23.5px);
-    font-size: clamp(0px, 1.3vw, 29.38px);
-    border-radius: clamp(0px, 1.95vw, 44.07px);
+    width: 12.37vw;
+    padding-block: 1.04vw;
+    font-size: 1.3vw;
+    border-radius: 1.95vw;
     cursor: pointer;
     transition: 200ms;
 }
 
 .restaurantOrder {
-    border: clamp(0px, 0.065vw, 1.47px) solid var(--secondary);
+    border: 0.065vw solid var(--secondary);
     background-color: var(--secondary);
 }
 
 .restaurantReservation {
-    border: clamp(0px, 0.065vw, 1.47px) solid var(--tertiary);
+    border: 0.065vw solid var(--tertiary);
     background-color: var(--tertiary);
 }
 
 .restaurantOrder:hover {
     background-color: #ca6d04;
-    border: clamp(0px, 0.065vw, 1.47px) solid #ca6d04;
+    border: 0.065vw solid #ca6d04;
 }
 
 .restaurantReservation:hover {
-    border: clamp(0px, 0.065vw, 1.47px) solid #338b25;
+    border: 0.065vw solid #338b25;
     background-color: #338b25;
 }
 
@@ -107,16 +107,16 @@
 .restaurantSpaghettiImg {
     width: 97%;
     z-index: 1;
-    filter: drop-shadow(-5px 10px 25px rgba(79, 79, 79, 0.2));
+    filter: drop-shadow(clamp(-5px, -0.33vw, -0.33vw) clamp(10px, 0.65vw, 0.65vw) clamp(25px, 1.63vw, 1.63vw) rgba(79, 79, 79, 0.2));
     user-select: none;
 }
 
-/* ----------> Welcome to Delizioso  <----------*/
+/* -----------> Welcome To Delizioso <------------ */
 
 .welcomeDelizioso {
-    margin-top: clamp(0px, 8.46vw, 191.2px);
-    padding-block: clamp(0px, 6.51vw, 130px);
-    background-color: rgb(63, 198, 110, 0.1);
+    margin-top: 8.46vw;
+    padding-block: 6.51vw;
+    background-color: rgba(63, 198, 110, 0.1);
 }
 
 .insideWelcome {
@@ -156,13 +156,13 @@
 
 .saladImg {
     width: 100%;
-    filter: drop-shadow(20px 20px 20px rgba(79, 79, 79, 0.2));
+    filter: drop-shadow(clamp(20px, 1.3vw, 1.3vw) clamp(20px, 1.3vw, 1.3vw) clamp(20px, 1.3vw, 1.3vw) rgba(79, 79, 79, 0.2));
     user-select: none;
 }
 
 .welcomeTitle {
     color: var(--primary);
-    font-size: clamp(0px, 5.27vw, 119.10px);
+    font-size: 5.27vw;
     font-family: 'tinos';
     font-weight: 700;
 }
@@ -173,34 +173,34 @@
 
 .welcomeInfo {
     color: #5C4529;
-    margin-block: clamp(0px, 1.6vw, 36.84px);
-    font-size: clamp(0px, 1.3vw, 29.38px);
+    margin-block: 1.6vw;
+    font-size: 1.3vw;
     font-family: 'poppins';
 }
 
 .welcomeBtn {
-    margin-top: clamp(0px, 1.4vw, 32.32px);
+    margin-top: 1.4vw;
     color: white;
     background-color: var(--secondary);
-    border: clamp(0px, 0.065vw, 1.47px) solid var(--secondary);
-    width: clamp(0px, 12.37vw, 279.56px);
-    padding-block: clamp(0px, 1.04vw, 23.5px);
-    font-size: clamp(0px, 1.3vw, 29.38px);
-    border-radius: clamp(0px, 1.95vw, 44.07px);
+    border: 0.065vw solid var(--secondary);
+    width: 12.37vw;
+    padding-block: 1.04vw;
+    font-size: 1.3vw;
+    border-radius: 1.95vw;
     cursor: pointer;
     transition: 200ms;
 }
 
 .welcomeBtn:hover {
     background-color: #ca6d04;
-    border: clamp(0px, 0.065vw, 1.47px) solid #ca6d04;
+    border: 0.065vw solid #ca6d04;
 }
 
-/* ----------> Reverse Table <---------------------- */
+/* ---------> Reserve Table <----------- */
 
 .reserveTable {
-    margin-top: 110px;
-    padding-block: 75px;
+    margin-top: 6.8vw;
+    padding-block: 4.88vw;
     background-color: #fff4e7cb;
 }
 
@@ -214,70 +214,70 @@
 .reserveLeft {
     width: 56%;
     position: relative;
-    border: 1px solid rgb(49, 31, 9, 0.2);
+    border: 0.065vw solid rgba(49, 31, 9, 0.2);
     border-radius: 100%;
-    height: 775px;
-    transform: translateX(-80px);
+    height: 50.46vw;
+    transform: translateX(-10%);
 }
 
 .reserveRight {
     width: 40%;
 }
 
-.reerveTitle {
+.reserveTitle {
     color: var(--primary);
-    font-size: 81px;
+    font-size: 5.27vw;
     font-family: 'tinos';
     font-weight: 700;
 }
 
 .reserveInfo {
     color: #5C4529;
-    margin-block: 25px;
-    font-size: 20px;
+    margin-block: 1.63vw;
+    font-size: 1.30vw;
     font-family: 'poppins';
 }
 
 .reserveBtn {
-    margin-top: 22px;
+    margin-top: 1.43vw;
     color: white;
     background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    width: 190px;
-    padding-block: 16px;
-    font-size: 20px;
-    border-radius: 30px;
+    border: 0.065vw solid var(--secondary);
+    width: 12.37vw;
+    padding-block: 1.04vw;
+    font-size: 1.30vw;
+    border-radius: 1.95vw;
     cursor: pointer;
     transition: 200ms;
 }
 
 .reserveBtn:hover {
     background-color: #ca6d04;
-    border: 1px solid #ca6d04;
+    border: 0.065vw solid #ca6d04;
 }
 
 .insideLeft {
     border-radius: 100%;
     position: absolute;
-    inset: 90px;
-    background-color: rgb(225, 195, 159, 0.2);
+    inset: 5.86vw;
+    background-color: rgba(225, 195, 159, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .leftImg {
-    width: 460px;
-    height: 450px;
+    width: 29.95vw;
+    height: 29.30vw;
     border-radius: 100%;
     object-fit: cover;
     user-select: none;
 }
 
 .reserveAbsolute {
-    width: 145px;
-    height: 145px;
-    background-color: rgb(225, 195, 159, 0.2);
+    width: 9.44vw;
+    height: 9.44vw;
+    background-color: rgba(225, 195, 159, 0.2);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -286,37 +286,37 @@
 }
 
 .reserveAbsolute img {
-    width: 109px;
-    height: 109px;
+    width: 7.10vw;
+    height: 7.10vw;
     border-radius: 100%;
     object-fit: cover;
     user-select: none;
 }
 
 .reserveAbsolute1 {
-    top: 0px;
-    right: 90px;
+    top: 0;
+    right: 11.5%;
 }
 
 .reserveAbsolute2 {
-    left: 90px;
-    bottom: 0px;
+    left: 11.5%;
+    bottom: 0;
 }
 
 /* -----------> Chef <------------- */
 
 .chefTitle {
-    margin-top: 70px;
-    font-size: 80px;
+    margin-top: clamp(24px, 4.2vw, 4.2vw);
+    font-size: 5.21vw;
     font-weight: 700;
     font-family: 'tinos';
     text-align: center;
 }
 
 .cooks {
-    margin-top: 80px;
+    margin-top: 5.21vw;
     display: grid;
-    gap: 40px 35px;
+    gap: 2.6vw 2.28vw;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -327,9 +327,9 @@
 }
 
 .chefImage {
-    border-radius: 45px;
+    border-radius: 2.93vw;
     width: 100%;
-    height: 630px;
+    height: 41.02vw;
     object-fit: cover;
     object-position: top center;
     user-select: none;
@@ -348,44 +348,44 @@
 
 .chefName {
     color: var(--primary);
-    margin-top: 30px;
+    margin-top: 1.95vw;
     font-family: 'poppins';
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.63vw;
 }
 
 .chefJob {
-    margin-top: 18px;
+    margin-top: 1.17vw;
     color: #A08D76;
     font-family: 'poppins';
-    font-size: 20px;
+    font-size: 1.30vw;
 }
 
 .chefBtn {
-    width: 220px;
+    width: 14.32vw;
     color: white;
-    margin-top: 80px;
+    margin-top: 5.21vw;
     margin-inline: auto;
-    padding-block: 16px;
-    font-size: 20px;
+    padding-block: 1.04vw;
+    font-size: 1.30vw;
     background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: 30px;
+    border: 0.065vw solid var(--secondary);
+    border-radius: 1.95vw;
     display: block;
     cursor: pointer;
     transition: 200ms;
 }
 
 .chefHideBtn {
-    width: 50px;
-    height: 50px;
+    width: 3.25vw;
+    height: 3.25vw;
     color: black;
-    margin-top: 70px;
+    margin-top: 4.56vw;
     margin-inline: auto;
-    font-size: 25px;
+    font-size: 1.63vw;
     background-color: rgb(241, 241, 241);
-    border: 1px solid transparent;
-    border-radius: 30px;
+    border: 0.065vw solid transparent;
+    border-radius: 1.95vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,12 +395,12 @@
 
 .chefHideBtn:hover {
     background-color: rgb(227, 227, 227);
-    border: 1px solid rgb(227, 227, 227);
+    border: 0.065vw solid rgb(227, 227, 227);
 }
 
 .chefBtn:hover {
     background-color: #ca6d04;
-    border: 1px solid #ca6d04;
+    border: 0.065vw solid #ca6d04;
 }
 
 .hideBtn {
@@ -536,7 +536,7 @@
         width: 31.134vw;
         padding-block: 2.72vw;
         font-size: 3.2vw;
-        border-radius: 4.8vw;                    
+        border-radius: 4.8vw;
     }
 
     .restaurantOrder {
@@ -561,25 +561,134 @@
 
     .welcomeDelizioso {
         margin-top: 15.45vw;
-        padding-block: 8vw ;
+        padding-block: 8vw;
     }
-    
+
     .welcomeTitle {
         font-size: 13vw;
     }
-    
+
     .welcomeInfo {
         margin-block: 3.8vw;
         font-size: 3.14vw;
     }
-    
+
     .welcomeBtn {
         margin-top: 3.3vw;
         border: 0.156vw solid var(--secondary);
         width: 31.134vw;
         padding-block: 2.72vw;
         font-size: 3.2vw;
-        border-radius: 4.8vw;                
+        border-radius: 4.8vw;
     }
 
+    /* ---------> Reverse Table <------------ */
+
+    .reserveTable {
+        overflow: hidden;
+        margin-top: 13.3vw;
+        padding-block: 8vw 10vw;
+    }
+
+    .insideReserve {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 9vw;
+    }
+
+    .reserveRight {
+        width: 85%;
+    }
+
+    .reserveLeft {
+        box-sizing: border-box;
+        transform: translate(0px);
+        width: 115%;
+        height: 110vw;
+    }
+
+    .reserveTitle {
+        font-size: 13vw;
+    }
+
+    .reserveInfo {
+        margin-block: 3.8vw;
+        font-size: 3.14vw;
+    }
+
+    .reserveBtn {
+        margin-top: 3.3vw;
+        border: 0.156vw solid var(--secondary);
+        width: 31.134vw;
+        padding-block: 2.72vw;
+        font-size: 3.2vw;
+        border-radius: 4.8vw;
+    }
+
+    .insideLeft {
+        inset: 11.5vw;
+    }
+
+    .leftImg {
+        width: 69.8vw;
+        height: 69vw;
+    }
+
+    .reserveAbsolute {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .reserveAbsolute img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    /* ---------> Chef <--------- */
+
+    .chefTitle {
+        font-size: clamp(42px, 12vw, 200px);
+        margin-top: clamp(23px, 5vw, 5vw);
+    }
+
+    .cooks {
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw 3.25vw;
+        margin-top: 6.8vw;
+    }
+
+    .chefImage {
+        height: 72vw;
+        border-radius: 4vw;
+    }
+
+    .chefName {
+        margin-top: 3.65vw;
+        font-size: 3.3vw;
+    }
+
+    .chefJob {
+        margin-top: 1.6vw;
+        font-size: 3vw;
+    }
+
+    .chefBtn {
+        width: 28.64vw;
+        margin-top: 10.42vw;
+        padding-block: 2.08vw;
+        font-size: 2.7vw;
+        border: 0.13vw solid var(--secondary);
+        border-radius: 3.9vw;
+    }
+    
+    .chefHideBtn {
+        width: 6.5vw;
+        height: 6.5vw;
+        margin-top: 9.12vw;
+        font-size: 3.26vw;
+        border: 0.13vw solid transparent;
+        border-radius: 3.9vw;
+    }
+    
+    
 }
