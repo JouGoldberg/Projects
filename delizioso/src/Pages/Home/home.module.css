@@ -307,7 +307,7 @@
 
 .chefTitle {
     color: var(--primary);
-    margin-top: clamp(24px, 3.85vw, 3.85vw);
+    margin-top: clamp(24px, 3.83vw, 3.85vw);
     font-size: 5.21vw;
     font-weight: 700;
     font-family: 'tinos';
@@ -315,7 +315,7 @@
 }
 
 .cooks {
-    margin-top: 5.3vw;
+    margin-top: 5.4vw;
     display: grid;
     gap: 2.6vw 2.28vw;
     grid-template-columns: repeat(3, 1fr);
@@ -411,10 +411,10 @@
 /* --------------> weAreOpen <-------------- */
 
 .weAreOpen {
-    margin-top: 125px;
+    margin-top: 135px;
     padding-block: 45px 57px;
     width: 100%;
-    background: linear-gradient(25deg, rgba(6, 6, 6, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(25deg, rgba(6, 6, 6, 0.7) 30%, rgba(0, 0, 0, 0.1) 100%);
     border-radius: 70px;
     position: relative;
     user-select: none;
@@ -442,7 +442,7 @@
 }
 
 .openTimeDiv {
-    margin-top: 15px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -536,7 +536,7 @@
     .restaurantButtons button {
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.2vw;
+        font-size: 3.4vw;
         border-radius: 4.8vw;
     }
 
@@ -575,11 +575,11 @@
     }
 
     .welcomeBtn {
-        margin-top: 3.3vw;
+        margin-top: 3.2vw;
         border: 0.156vw solid var(--secondary);
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.2vw;
+        font-size: 3.4vw;
         border-radius: 4.8vw;
     }
 
@@ -587,7 +587,7 @@
 
     .reserveTable {
         overflow: hidden;
-        margin-top: 13.3vw;
+        margin-top: 14vw;
         padding-block: 8vw 10vw;
     }
 
@@ -618,11 +618,11 @@
     }
 
     .reserveBtn {
-        margin-top: 3.3vw;
+        margin-top: 3.2vw;
         border: 0.156vw solid var(--secondary);
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.2vw;
+        font-size: 3.4vw;
         border-radius: 4.8vw;
     }
 
@@ -649,13 +649,13 @@
 
     .chefTitle {
         font-size: clamp(42px, 12vw, 200px);
-        margin-top: clamp(23px, 5vw, 5vw);
+        margin-top: clamp(23.2px, 5, 5vw);
     }
 
     .cooks {
         grid-template-columns: 1fr 1fr;
         gap: 5.5vw 3.25vw;
-        margin-top: 8vw;
+        margin-top: 8.25vw;
     }
 
     .chefImage {
@@ -665,20 +665,19 @@
 
     .chefName {
         margin-top: 3.65vw;
-        font-size: 3.5vw;
+        font-size: 3.75vw;
     }
 
     .chefJob {
         margin-top: 1.6vw;
-        font-size: 3.2vw;
+        font-size: 3.45vw;
     }
-
 
     .chefBtn {
         width: 33.51vw;
         margin-top: 12.19vw;
         padding-block: 2.43vw;
-        font-size: 3.35vw;
+        font-size: 3.4vw;
         border: 0.15vw solid var(--secondary);
         border-radius: 4.56vw;
     }
@@ -692,5 +691,4 @@
         border-radius: 5.93vw;
     }
     
-  
 }
