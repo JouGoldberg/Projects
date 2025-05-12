@@ -199,7 +199,7 @@
 /* ---------> Reserve Table <----------- */
 
 .reserveTable {
-    margin-top: 6.8vw;
+    margin-top: 6.25vw;
     padding-block: 4.88vw;
     background-color: #fff4e7cb;
 }
@@ -307,7 +307,7 @@
 
 .chefTitle {
     color: var(--primary);
-    margin-top: clamp(24px, 3.83vw, 3.85vw);
+    margin-top: clamp(24px, 3.9vw, 3.9vw);
     font-size: 5.21vw;
     font-weight: 700;
     font-family: 'tinos';
@@ -536,7 +536,7 @@
     .restaurantButtons button {
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.4vw;
+        font-size: 3.34vw;
         border-radius: 4.8vw;
     }
 
@@ -579,7 +579,7 @@
         border: 0.156vw solid var(--secondary);
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.4vw;
+        font-size: 3.34vw;
         border-radius: 4.8vw;
     }
 
@@ -622,7 +622,7 @@
         border: 0.156vw solid var(--secondary);
         width: 31.134vw;
         padding-block: 2.72vw;
-        font-size: 3.4vw;
+        font-size: 3.34vw;
         border-radius: 4.8vw;
     }
 
@@ -648,29 +648,29 @@
     /* ---------> Chef <--------- */
 
     .chefTitle {
-        font-size: clamp(42px, 12vw, 200px);
-        margin-top: clamp(23.2px, 5, 5vw);
+        font-size: clamp(42px, 12vw, 12vw);
+        margin-top: clamp(19.5px, 6.1vw, 6.1vw);
     }
 
     .cooks {
         grid-template-columns: 1fr 1fr;
-        gap: 5.5vw 3.25vw;
-        margin-top: 8.25vw;
+        gap: 5.2vw 3.3vw;
+        margin-top: clamp(26px, 8.4vw, 8.4vw);
     }
 
     .chefImage {
         height: 75vw;
-        border-radius: 4vw;
+        border-radius: 5vw;
     }
 
     .chefName {
-        margin-top: 3.65vw;
-        font-size: 3.75vw;
+        margin-top: 3.7vw;
+        font-size: 3.65vw;
     }
 
     .chefJob {
-        margin-top: 1.6vw;
-        font-size: 3.45vw;
+        margin-top: 1.7vw;
+        font-size: 3.3vw;
     }
 
     .chefBtn {
@@ -681,7 +681,7 @@
         border: 0.15vw solid var(--secondary);
         border-radius: 4.56vw;
     }
-    
+
     .chefHideBtn {
         width: 10vw;
         height: 10vw;
@@ -690,5 +690,5 @@
         border: 0.20vw solid transparent;
         border-radius: 5.93vw;
     }
-    
+
 }

@@ -1,11 +1,11 @@
 :root {
     --primary: #311F09;
     --secondary: #FF8A00;
-    --tertiary: #3FA72F
+    --tertiary: #3FA72F;
 }
 
 .navbar {
-    padding-block: 20px;
+    padding-block: 1.302vw;
 }
 
 .insideNavbar {
@@ -19,9 +19,13 @@
     user-select: none;
 }
 
+.logo img {
+    width: 8.594vw;
+}
+
 .logoLink {
     position: absolute;
-    inset: 0px;
+    inset: 0;
 }
 
 .navLinks {
@@ -35,7 +39,7 @@
     text-decoration: none;
     font-family: 'poppins', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.911vw;
 }
 
 .active {
@@ -45,7 +49,7 @@
 .navEnd {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.977vw;
 }
 
 .basketImgDiv {
@@ -54,11 +58,11 @@
 }
 
 .basketImg {
-    width: 24px;
-    height: 24px;
-    padding: 10px;
+    width: 1.563vw;
+    height: 1.563vw;
+    padding: 0.651vw;
     border-radius: 100%;
-    border: 1px solid transparent;
+    border: 0.065vw solid transparent;
     cursor: pointer;
     transition: 300ms;
 }
@@ -68,16 +72,16 @@
 }
 
 .basketNum {
-    border: 1px solid red;
+    border: 0.065vw solid red;
     background-color: red;
     color: white;
     font-family: 'poppins';
-    font-size: 9px;
     position: absolute;
-    top: 4px;
-    right: 1px;
-    width: 15px;
-    height: 15px;
+    font-size: 0.586vw;
+    top: 0.26vw;
+    right: 0.065vw;
+    width: 0.977vw;
+    height: 0.977vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,9 +95,9 @@
     background-color: var(--tertiary);
     font-family: 'poppins', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    padding: 10px 26px;
-    border-radius: 35px;
+    font-size: 0.911vw;
+    padding: 0.651vw 1.693vw;
+    border-radius: 2.278vw;
     transition: 200ms;
 }
 
@@ -102,7 +106,7 @@
 }
 
 .navMenuIcon {
-    padding: 11px;
+    padding: 0.716vw;
     border-radius: 100%;
     overflow: visible;
     cursor: pointer;
@@ -124,6 +128,33 @@
 }
 
 @media(max-width:1250px) {
+    .navbar {
+        padding-block: 20px;
+    }
+
+    .logo img {
+        width: 132px;
+    }
+
+    .basketImg {
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+    }
+
+    .basketNum {
+        font-size: 9px;
+        top: 4px;
+        right: 1px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .navMenuIcon {
+        padding: 11px;
+    }
+
+
     .navLinks {
         display: none;
     }

@@ -42,7 +42,7 @@ window.onresize = () => {
         <Route path='*' element={<NotFound />} />
       </Routes>
 
-      {/* {hideLayout || <Footer />} */}
+      {hideLayout || <Footer />}
     </div>
   )
 }

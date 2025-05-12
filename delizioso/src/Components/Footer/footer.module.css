@@ -5,14 +5,16 @@
 }
 
 .footer {
-    margin-top: 130px;
-    padding-top: 90px;
-    padding-inline: 15px;
-    background-color: #311F09;
+    padding-top: 5.86vw;
+    padding-inline: 0.98vw;
+    background-color: var(--primary);
 }
-.columnLogo{
+
+.columnLogo {
     user-select: none;
+    width: 8.46vw;
 }
+
 .insideFooter {
     display: flex;
     justify-content: space-between;
@@ -30,46 +32,107 @@
 
 .columnTitle {
     color: var(--secondary);
-    font-size: 30px;
+    font-size: 1.95vw;
     font-weight: 600;
     font-family: 'poppins';
 }
 
 .columnLink {
-    color: white;
-    margin-block: 30px;
-    font-size: 19px;
+    color: #E3E2E0;
+    margin-block: 1.95vw;
+    font-size: 1.24vw;
     font-family: 'poppins';
     font-weight: 300;
 }
 
 .sosialNetworks {
-    margin-top: 35px;
+    margin-top: 2.28vw;
     display: flex;
-    gap: 12px;
+    gap: 0.78vw;
 }
 
 .sosialNetImg {
-    width: 48px;
-    height: 48px;
+    width: 3.13vw;
+    height: 3.13vw;
     user-select: none;
 }
 
 .columnInfo {
-    color: white;
-    margin-block: 30px;
-    font-size: 19px;
+    color: #E3E2E0;
+    margin-block: 1.95vw;
+    font-size: 1.24vw;
     font-family: 'poppins';
     font-weight: 300;
-
 }
 
 .footP {
-    color: white;
+    color: #E3E2E0;
     text-align: center;
-    margin-top: 35px;
-    padding-block: 25px;
-    font-size: 19px;
+    margin-top: 2.28vw;
+    padding-block: 1.63vw;
+    font-size: 1.24vw;
     font-family: 'poppins';
     font-weight: 300;
+}
+
+@media(max-width:650px) {
+    .insideFooter {
+        flex-direction: column;
+        gap: 9vw;
+    }
+
+    .footerLeft {
+        flex-direction: column;
+    }
+
+    .footP {
+        text-align: start;
+    }
+
+    .footerLeft,
+    .footerRight {
+        width: 100%;
+    }
+
+
+    .footer {
+        padding-top: 13vw;
+        padding-inline: 2.75vw;
+    }
+    
+    .columnLogo {
+        width: 30vw;
+    }
+    
+    .columnTitle {
+        margin-top: 2vw;
+        font-size: 5.48vw;
+    }
+    
+    .columnLink {
+        margin-block: 5vw;
+        font-size: 3.49vw;
+    }
+    
+    .sosialNetworks {
+        margin-top: 6.4vw;
+        gap: 2.19vw;
+    }
+    
+    .sosialNetImg {
+        width: 8.79vw;
+        height: 8.79vw;
+    }
+    
+    .columnInfo {
+        margin-block: 5.4vw;
+        font-size: 3.49vw;
+    }
+    
+    .footP {
+        margin-top: 3vw;
+        padding-block: 5vw;
+        font-size: 3.49vw;
+    }
+    
 }

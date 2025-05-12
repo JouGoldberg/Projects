@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './footer.module.css'
 import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
   const location = useLocation()
-  const marginTop = location.pathname == '/contact' ? '0px' : "130px"
+
+  const [resize, setResize] = useState(window.innerWidth)
+  window.addEventListener('resize', () => setResize(window.innerWidth))
+
+
+  const marginTop = location.pathname == '/contact' ? '0px' : resize > 650 ? "8.46vw" : '18vw'
   return (
-    <div style={{marginTop:marginTop}} className={styles.footer}>
+    <div style={{ marginTop: marginTop }} className={styles.footer}>
       <div className="container">
         <div className={styles.insideFooter}>
           <div className={styles.footerRight}>
@@ -41,8 +46,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className={styles.footP}>Copyright © 2022 Delizioso</p>
       </div>
-      <p className={styles.footP}>Copyright © 2022 Delizioso</p>
     </div>
   )
 }

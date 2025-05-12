@@ -41,7 +41,7 @@ const PopularMenu = (props: IProps) => {
         setActiveMenuPage(1)
     }, [menuItem])
 
-    const marginTop: string = location.pathname == '/menu' ? '3.9vw' : 'clamp(24px, 4.2vw, 4.2vw)'
+    const marginTop: string = location.pathname == '/menu' ? '3.9vw' : 'clamp(22.5px, 3.97vw , 3.97vw)'
 
     return (
         <div style={{ marginTop: marginTop }} className={styles.popularMenu}>

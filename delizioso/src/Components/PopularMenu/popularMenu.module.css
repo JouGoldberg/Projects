@@ -13,7 +13,7 @@
 }
 
 .menuTabs {
-    margin-top: 5vw;
+    margin-top: 4.9vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.3vw;
@@ -48,7 +48,7 @@
     margin-top: 3.91vw;
     display: grid;
     gap: 1.63vw;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menuCard {
@@ -74,6 +74,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -135,8 +136,10 @@
 
 @media(max-width:650px) {
     .title {
-        font-size: clamp(42px , 11vw , 200px);
+        font-size: clamp(42px, 12vw, 12vw);
+        margin-top: clamp(0px, 6.2vw, 6.2vw);
     }
+
     .menu {
         margin-top: 6.35vw;
         grid-template-columns: 1fr 1fr;
@@ -182,7 +185,7 @@
         border-radius: 100%;
         width: 8.2vw;
         height: 8.2vw;
-        font-size: 6.13vw;        
+        font-size: 6.13vw;
         font-weight: 100;
         font-family: 'sans-serif';
         display: flex;
@@ -191,7 +194,7 @@
     }
 
     .menuTabs {
-        margin-top: 8vw;
+        margin-top: clamp(26.5px, 8.2vw, 8.2vw);
         display: flex;
         gap: 1.684vw;
         width: 100%;
@@ -200,7 +203,7 @@
         padding-left: 8vw;
         box-sizing: border-box;
     }
-    
+
     .menuTabs p {
         min-width: 26.4vw;
         padding-block: 2.533vw;
