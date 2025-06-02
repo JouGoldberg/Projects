@@ -18,7 +18,7 @@ const Pagination = ({ activeMenuPage, setActiveMenuPage, data, showMenuItem }: I
     return (
         <div className={styles.panigation}>
             {
-                panigation && panigation !== 1 ?
+                panigation ?
                     <div className={styles.insidePanigation}>
                         <button onClick={() => setActiveMenuPage((pre: number) => pre - 1)} disabled={1 == activeMenuPage} className={styles.navBtn}>«</button>
                         {

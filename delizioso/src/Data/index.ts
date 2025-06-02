@@ -1,6 +1,15 @@
-import { Ichef, IPopularMenu, TOrderList } from "../Interfaces";
+import { IChef, ILinks, IPopularMenu, TOrderList } from "../Interfaces";
 
 export const menuTabs: string[] = ['Breakfast', 'Dinner', 'Lunch', 'Dessert', 'Drink']
+
+export const links: ILinks[] = [
+    { href: '/', title: 'Home' },
+    { href: '/menu', title: 'Menu' },
+    { href: '/about', title: 'About us' },
+    { href: '/order', title: 'Order online' },
+    { href: '/reservation', title: 'Reservation' },
+    { href: '/contact', title: 'Contact us' },
+]
 
 export const popularMenu: IPopularMenu = {
     breakfast: [
@@ -358,7 +367,7 @@ export const popularMenu: IPopularMenu = {
             image: '/dessert6.png',
             name: 'Venezuelan',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price:8.5,
+            price: 8.5,
             id: 51,
         },
         {
@@ -684,7 +693,7 @@ export const pizzaMenu: TOrderList[] = [
     },
 ]
 
-export const chef: Ichef[] = [
+export const chef: IChef[] = [
     {
         name: 'Betran Komar',
         image: '/chef1.png',

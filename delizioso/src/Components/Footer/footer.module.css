@@ -78,7 +78,7 @@
 @media(max-width:650px) {
     .insideFooter {
         flex-direction: column;
-        gap: 9vw;
+        gap: 8vw;
     }
 
     .footerLeft {

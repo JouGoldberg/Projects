@@ -13,24 +13,24 @@
 }
 
 .menuTabs {
-    margin-top: 4.9vw;
+    margin-top: 4.765vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.3vw;
 }
 
 .menuTabs p {
-    padding-block: 1.11vw;
+    color: rgba(49, 31, 9, 1);
     background-color: rgba(208, 204, 199, 0.1);
+    border: 0.07vw solid transparent;
+    padding-block: 1.11vw;
     border-radius: 2.6vw;
+    font-size: 1.3vw;
     font-family: 'poppins';
     text-align: center;
     cursor: pointer;
     transition: 200ms;
     user-select: none;
-    color: rgba(49, 31, 9, 1);
-    border: 0.07vw solid transparent;
-    font-size: 1.3vw;
     white-space: nowrap;
 }
 
@@ -194,7 +194,7 @@
     }
 
     .menuTabs {
-        margin-top: clamp(26.5px, 8.2vw, 8.2vw);
+        margin-top: clamp(26.2px, 8vw, 8vw);
         display: flex;
         gap: 1.684vw;
         width: 100%;

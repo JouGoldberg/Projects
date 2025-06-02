@@ -9,7 +9,7 @@ const Footer = () => {
   window.addEventListener('resize', () => setResize(window.innerWidth))
 
 
-  const marginTop = location.pathname == '/contact' ? '0px' : resize > 650 ? "8.46vw" : '18vw'
+  const marginTop = location.pathname == '/contact' ? '0px' : resize > 650 ? "7.5vw" : '17vw'
   return (
     <div style={{ marginTop: marginTop }} className={styles.footer}>
       <div className="container">

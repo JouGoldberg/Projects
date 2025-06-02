@@ -8,12 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Home = () => {
+  const navigate = useNavigate()
 
   useEffect(() => {
     document.title = 'Delizioso | Home'
   }, [])
-
-  const navigate = useNavigate()
 
   const chefLength: number = chef.length
   const [end, setEnd] = useState<number>(3)
@@ -98,25 +97,6 @@ const Home = () => {
           <button onClick={() => setEnd(3)} className={`${!hideBtn ? styles.hideBtn : ''} ${styles.chefHideBtn}`}><FontAwesomeIcon icon={faChevronUp} /></button>
         </div>
       </div>
-
-      {/* <div className='container'>
-        <div className={styles.weAreOpen}>
-          <div className={styles.insideWeAreOpen}>
-            <h2 className={styles.openTitle}>we are open from</h2>
-            <p className={styles.openInfo}>Monday-Sunday</p>
-            <div className={styles.openTimeDiv}>
-              <p className={styles.openTimeP}>Launch : Mon-Sun : 11:00am-02:00pm</p>
-              <p className={styles.openTimeP}>Dinner : sunday : 04:00pm-08:00pm</p>
-              <p className={styles.openTimeP}>04:00pm-09:00pm</p>
-            </div>
-            <div className={styles.openButtons}>
-              <button onClick={() => navigate('/order')} className={styles.openOrderBtn}>Order now</button>
-              <button onClick={() => navigate('/reservation')} className={styles.openReservBtn}>Reservation</button>
-            </div>
-          </div>
-          <img className={styles.weAreOpenImg} src="/weAreOpenImg.jpg" alt="Spaghetti" />
-        </div>
-      </div> */}
     </div>
   )
 }

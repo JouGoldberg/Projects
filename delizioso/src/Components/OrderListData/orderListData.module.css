@@ -1,21 +1,27 @@
+:root {
+    --primary: #311F09;
+    --secondary: #FF8A00;
+    --tertiary: #3FA72F;
+}
+
 .menuLeft {
     width: 100%;
     display: grid;
-    gap: 22px;
+    gap: 1.43vw;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menuNotItem {
     font-family: 'poppins';
-    font-size: 80px;
+    font-size: 5.21vw;
     grid-column: 2;
 }
 
 .menuCard {
-    padding-block: 23px;
-    padding-inline: 20px;
+    padding-block: 1.50vw;
+    padding-inline: 1.30vw;
     background-color: rgba(208, 204, 199, 0.1);
-    border-radius: 42px;
+    border-radius: 2.73vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +29,7 @@
 
 .cardImage {
     width: 100%;
-    height: 200px;
+    height: 13.02vw;
     object-fit: contain;
     filter: contrast(110%);
     user-select: none;
@@ -41,10 +47,10 @@
 }
 
 .cardName {
-    width: 220px;
+    width: 14.32vw;
     color: #342717;
-    margin-top: 18px;
-    font-size: 27px;
+    margin-top: 1.17vw;
+    font-size: 1.76vw;
     font-weight: 600;
     font-family: 'poppins';
     text-align: center;
@@ -54,15 +60,15 @@
 }
 
 .cardDesc {
-    margin-top: 10px;
+    margin-top: 0.65vw;
     color: rgb(52, 39, 23, 0.8);
     text-align: center;
-    font-size: 16px;
+    font-size: 1.04vw;
     font-family: 'poppins';
 }
 
 .cardFoot {
-    margin-top: 18px;
+    margin-top: 1.17vw;
     width: 95%;
     display: flex;
     align-items: center;
@@ -71,7 +77,7 @@
 
 .cardPrice {
     color: var(--primary);
-    font-size: 28px;
+    font-size: 1.82vw;
     font-weight: 600;
     font-family: 'poppins';
 }
@@ -80,10 +86,10 @@
     color: white;
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
-    width: 45px;
-    height: 45px;
-    font-size: 30px;
-    border-radius: 30px;
+    width: 2.93vw;
+    height: 2.93vw;
+    font-size: 1.95vw;
+    border-radius: 1.95vw;
     cursor: pointer;
     transition: 200ms;
     display: flex;

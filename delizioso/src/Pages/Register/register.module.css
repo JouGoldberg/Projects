@@ -11,22 +11,27 @@
     overflow: hidden;
     position: relative;
 }
-.linkDiv{
+
+.linkDiv {
     position: absolute;
     top: 30px;
     left: 30px;
 }
+
 .posRelative {
     position: relative;
 }
+
 .posRelative img {
     width: 35px;
     height: 35px;
 }
+
 .homeLink {
     position: absolute;
     inset: 0px;
 }
+
 .insideLogin {
     width: 100%;
     height: 100%;
@@ -100,7 +105,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.rememberCheckbox input{
+
+.rememberCheckbox input {
     width: 18px;
     height: 18px;
     cursor: pointer;

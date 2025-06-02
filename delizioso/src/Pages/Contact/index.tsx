@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <div className={styles.contact}>
       <div className="container">
         <h1 className={styles.title}>Contact us</h1>
         <p className={styles.info}>We love hearing from our customers. Feel free to share your experience or ask any <br /> questions you may have.</p>

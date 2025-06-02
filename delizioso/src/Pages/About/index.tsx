@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styles from './about.module.css'
+import { ThemeContext } from '../../Context'
 
 const About = () => {
-    useEffect(() => {
-      document.title = 'Delizioso | About us'
-    },[])
+  useEffect(() => {
+    document.title = 'Delizioso | About us'
+  }, [])
+
+  const { resize } = useContext(ThemeContext)
+
   return (
     <div className={styles.about}>
       <div className={styles.aboutHead}>
@@ -14,7 +18,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.aboutHeadRight}>
-          <h1 className={styles.aboutRightTitle}><span className={styles.orange}>Our</span> <br />restaurant</h1>
+          <h1 className={styles.aboutRightTitle}><span className={styles.orange}>Our</span> <br style={{ display: resize > 650 ? 'block' : 'none' }} />restaurant</h1>
           <p className={styles.aboutRightInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
         </div>

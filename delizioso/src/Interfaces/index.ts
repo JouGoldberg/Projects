@@ -16,7 +16,7 @@ export interface IPopularMenu {
     drink: TMenuItem;
 }
 
-export interface Ichef {
+export interface IChef {
     name: string;
     image: string;
     job: string;
@@ -58,7 +58,7 @@ export interface IReservation {
     note: string;
 }
 
-export interface ICheckout{
+export interface ICheckout {
     firstName: string;
     lastName: string;
     number: string;
@@ -69,4 +69,9 @@ export interface ICheckout{
     paymentMethod: string;
     shippingLocation: string;
     shippingAddress: string;
+}
+
+export interface ILinks {
+    href: string;
+    title: string;
 }

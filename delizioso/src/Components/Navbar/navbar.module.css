@@ -36,10 +36,11 @@
 
 .navLink {
     color: var(--primary);
-    text-decoration: none;
-    font-family: 'poppins', sans-serif;
-    font-weight: 400;
     font-size: 0.911vw;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    user-select: none;
 }
 
 .active {
@@ -120,11 +121,121 @@
 }
 
 .resNav {
+    width: 290px;
     background-color: white;
-    opacity: 0.4;
+    border-right: 1px solid rgb(205, 205, 205);
+    box-shadow: 0px 0px 20px rgb(161, 161, 161);
     position: fixed;
     inset: 0;
     z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 25px;
+    transition: 350ms;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.resOpen {
+    transform: translateX(0px);
+}
+
+.resClose {
+    transform: translateX(-110%);
+}
+
+.resNavLogo {
+    margin-inline: 25px;
+    margin-bottom: 20px;
+    width: min-content;
+    position: relative;
+    user-select: none;
+}
+
+.resNavLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.resNavLinks .navLink {
+    padding: 15.5px 18px;
+    margin-inline: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 200ms;
+}
+
+.resNavBtns {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resNavBtns button {
+    margin-inline: 15px;
+    padding-block: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'poppins';
+    transition: 200ms;
+}
+
+.resNavBtns .loginBtn {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.resNavBtns .loginBtn:hover {
+    border: 1px solid var(--tertiary);
+}
+
+.resNavBtns .signBtn {
+    border: 1px solid var(--tertiary);
+    color: white;
+    background-color: var(--tertiary);
+}
+
+.resNavBtns .signBtn:hover {
+    background-color: #338b25;
+}
+
+.resNavLinks .navLink:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+.resNavO {
+    position: fixed;
+    inset: 0px;
+    z-index: 4;
+}
+
+@media(max-width:500px) {
+.resNav {
+    width: 35.98vh;
+}
+
+.resNavLogo img {
+    width: 17.99vh;
+}
+
+.resNavLinks .navLink {
+    padding: 1.95vh 2.70vh;
+    font-size: 2.10vh;
+}
+
+.resNavBtns {
+    gap: 1.05vh;
+}
+
+.resNavBtns button {
+    font-size: 2.10vh;
+    padding-block: 1.50vh;
+}
+
 }
 
 @media(max-width:1250px) {
@@ -154,11 +265,7 @@
         padding: 11px;
     }
 
-
-    .navLinks {
-        display: none;
-    }
-
+    .navLinks,
     .loginLink {
         display: none;
     }

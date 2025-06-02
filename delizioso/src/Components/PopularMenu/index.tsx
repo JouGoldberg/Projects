@@ -11,13 +11,11 @@ interface IProps {
 }
 
 const PopularMenu = (props: IProps) => {
-    const { resize } = useContext(ThemeContext)
-
     const navigate = useNavigate()
     const location = useLocation()
     const [searchParams, setSearchParams] = useSearchParams()
 
-    const { addOrderList } = useContext(ThemeContext)
+    const { resize, addOrderList } = useContext(ThemeContext)
     const menuItem: string = searchParams.get('menuItem') || 'dinner'
 
     const showMenuItem: number = 6
@@ -41,7 +39,7 @@ const PopularMenu = (props: IProps) => {
         setActiveMenuPage(1)
     }, [menuItem])
 
-    const marginTop: string = location.pathname == '/menu' ? '3.9vw' : 'clamp(22.5px, 3.97vw , 3.97vw)'
+    const marginTop: string = location.pathname == '/menu' ? '3.9vw' : 'clamp(22.5px, 3.85vw , 3.85vw)'
 
     return (
         <div style={{ marginTop: marginTop }} className={styles.popularMenu}>

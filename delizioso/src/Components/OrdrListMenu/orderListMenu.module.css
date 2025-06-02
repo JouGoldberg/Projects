@@ -1,28 +1,28 @@
 .menuRight {
-    border-radius: 25px;
-    box-shadow: 0px 0px 25px rgb(232, 232, 232, 0.7);
-    padding-top: 16px;
+    border-radius: 1.63vw;
+    box-shadow: 0px 0px 1.63vw rgba(232, 232, 232, 0.7);
+    padding-top: 1.04vw;
 }
 
 .orderListTitle {
     color: white;
-    background-color: rgb(81, 41, 130, 0.9);
-    border-radius: 18px;
-    font-size: 30px;
+    background-color: rgba(81, 41, 130, 0.9);
+    border-radius: 1.17vw;
+    font-size: 1.95vw;
     font-family: 'poppins';
     font-weight: 600;
     text-align: center;
-    padding-block: 23px;
-    margin-inline: 16px;
+    padding-block: 1.50vw;
+    margin-inline: 1.04vw;
 }
 
 .orderListMenu {
-    margin-inline: 16px;
+    margin-inline: 1.04vw;
 }
 
 .orderListCard {
-    margin-top: 30px;
-    padding-inline: 10px;
+    margin-top: 1.95vw;
+    padding-inline: 0.65vw;
 }
 
 .listCardHead {
@@ -32,47 +32,47 @@
 }
 
 .listCardName {
-    padding-right: 15px;
-    font-size: 26px;
+    padding-right: 0.98vw;
+    font-size: 1.69vw;
     font-weight: 600;
     font-family: 'poppins';
 }
 
 .listCardDelete {
-    width: 27px;
-    height: 27px;
+    width: 1.76vw;
+    height: 1.76vw;
     user-select: none;
     cursor: pointer;
 }
 
 .listCardFoot {
-    margin-top: 20px;
+    margin-top: 1.30vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .listCardPieces {
-    width: 110px;
+    width: 7.16vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(249, 249, 249, 0.7);
+    background-color: rgba(249, 249, 249, 0.7);
     border-radius: 100px;
 }
 
 .listCardNum {
-    font-size: 20px;
+    font-size: 1.30vw;
     font-family: 'poppins';
 }
 
 .listCardPieces div {
-    width: 30px;
-    height: 30px;
+    width: 1.95vw;
+    height: 1.95vw;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 100%;
-    font-size: 20px;
+    font-size: 1.30vw;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -84,75 +84,75 @@
 
 .piecesDec {
     color: #FF3838;
-    box-shadow: -2px 2px 10px rgb(255, 56, 56, 0.1);
+    box-shadow: -0.13vw 0.13vw 0.65vw rgba(255, 56, 56, 0.1);
 }
 
 .piecesInc {
     color: #3FC66E;
-    box-shadow: 2px 2px 10px rgb(63, 198, 110, 0.1);
+    box-shadow: 0.13vw 0.13vw 0.65vw rgba(63, 198, 110, 0.1);
 }
 
 .listCardPrice {
     color: var(--secondary);
-    font-size: 26px;
+    font-size: 1.69vw;
     font-weight: 500;
     font-family: 'poppins';
 }
 
-/* ------> vouncher <-------- */
+/* ------> voucher <-------- */
 
 .voucher {
-    margin-top: 33px;
-    padding-block: 19px 26px;
-    padding-inline: 26px;
-    border-top: 1px dashed #D0CCC7;
-    border-bottom: 1px dashed #D0CCC7;
+    margin-top: 2.15vw;
+    padding-block: 1.24vw 1.69vw;
+    padding-inline: 1.69vw;
+    border-top: 0.065vw dashed #D0CCC7;
+    border-bottom: 0.065vw dashed #D0CCC7;
 }
 
 .voucherName {
-    font-size: 26px;
+    font-size: 1.69vw;
     font-weight: 600;
     font-family: 'poppins';
 }
 
 .voucher form {
-    margin-top: 16px;
+    margin-top: 1.04vw;
     display: flex;
-    gap: 10px;
+    gap: 0.65vw;
 }
 
 .voucherCodeInp {
     width: 65%;
     background-color: rgb(249, 249, 249);
     border: 1px solid transparent;
-    padding-inline: 12px;
-    border-radius: 15px;
-    font-size: 18px;
+    padding-inline: 0.78vw;
+    border-radius: 0.98vw;
+    font-size: 1.17vw;
     font-family: 'poppins';
     outline: none;
     transition: 200ms;
 }
 
 .voucherCodeInp:focus {
-    border: 1px solid rgb(8, 117, 195, 0.5);
+    border: 1px solid rgba(8, 117, 195, 0.5);
 }
 
 .voucherCodeInp::placeholder {
     color: #0875C3;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.30vw;
 }
 
 .voucherSubmit {
-    width: 55px;
-    height: 55px;
+    width: 3.58vw;
+    height: 3.58vw;
     color: white;
     background-color: #53A5E0;
     border: 1px solid #53A5E0;
-    font-size: 36px;
+    font-size: 2.34vw;
     font-family: 'poppins';
     font-weight: 200;
-    border-radius: 15px;
+    border-radius: 0.98vw;
     cursor: pointer;
     transition: 300ms;
 }
@@ -165,26 +165,26 @@
 /* -----> checkout <------ */
 
 .checkout {
-    margin-top: 30px;
-    padding-inline: 26px;
+    margin-top: 1.95vw;
+    padding-inline: 1.69vw;
 }
 
 .checkoutDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 1.56vw;
 }
 
 .checkoutName {
-    font-size: 26px;
+    font-size: 1.69vw;
     font-weight: 600;
     font-family: 'poppins';
 }
 
 .checkoutMon {
     color: var(--secondary);
-    font-size: 26px;
+    font-size: 1.69vw;
     font-weight: 500;
     font-family: 'poppins';
 }
@@ -194,11 +194,11 @@
     color: white;
     background-color: #3FC66E;
     border: 1px solid #3FC66E;
-    margin-top: 24px;
-    margin-bottom: 29px;
-    padding-block: 10px;
-    border-radius: 12px;
-    font-size: 25px;
+    margin-top: 1.56vw;
+    margin-bottom: 1.89vw;
+    padding-block: 0.65vw;
+    border-radius: 0.78vw;
+    font-size: 1.63vw;
     font-family: 'poppins';
     font-weight: 600;
     cursor: pointer;
@@ -211,11 +211,11 @@
 }
 
 .menuPizzaName {
-    margin-left: 7px;
-    margin-top: 90px;
-    width: calc(5ch);
-    font-size: 30px;
+    margin-left: 0.46vw;
+    margin-top: 5.86vw;
+    width: 5ch;
+    font-size: 1.95vw;
     font-family: 'poppins';
     font-weight: 600;
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 0.20vw solid var(--secondary);
 }
