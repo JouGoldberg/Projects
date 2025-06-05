@@ -79,3 +79,48 @@
     background-color: #ca6d04;
     border: 1px solid #ca6d04;
 }
+
+@media(max-width:650px) {
+    .reservation {
+        margin-top: 3.9vw;
+    }
+
+    .title {
+        margin-top: clamp(0px, 6.2vw, 6.2vw);
+        font-size: clamp(42px, 12vw, 12vw);
+    }
+
+    .info {
+        font-size: 3.2vw;
+        margin-top: 2.5vw;
+    }
+
+    .contactForm {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .formNumber {
+        grid-column: auto;
+    }
+
+    .contactForm textarea {
+        grid-column: auto;
+        height: 100px;
+    }
+
+    .formInput {
+        font-size: 15px;
+        padding: 12.5px;
+        border-radius: 5px;
+    }
+
+    .formBtn {
+        margin-top: 9vw;
+        width: 30vw;
+        padding-block: 3.2vw;
+        font-size: 4vw;
+        border-radius: 1.3vw;
+    }
+}

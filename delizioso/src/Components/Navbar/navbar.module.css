@@ -215,7 +215,7 @@
 
 @media(max-width:500px) {
 .resNav {
-    width: 35.98vh;
+    width: 35vh;
 }
 
 .resNavLogo img {
@@ -223,7 +223,7 @@
 }
 
 .resNavLinks .navLink {
-    padding: 1.95vh 2.70vh;
+    padding: 2.2vh 2.7vh;
     font-size: 2.10vh;
 }
 
@@ -232,7 +232,7 @@
 }
 
 .resNavBtns button {
-    font-size: 2.10vh;
+    font-size: 2vh;
     padding-block: 1.50vh;
 }
 
