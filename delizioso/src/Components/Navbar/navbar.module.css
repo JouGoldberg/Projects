@@ -213,28 +213,28 @@
     z-index: 4;
 }
 
-@media(max-width:500px) {
-.resNav {
-    width: 35vh;
-}
+@media(max-width:400px) {
+    .resNav {
+        width: 35vh;
+    }
 
-.resNavLogo img {
-    width: 17.99vh;
-}
+    .resNavLogo img {
+        width: 17.99vh;
+    }
 
-.resNavLinks .navLink {
-    padding: 2.2vh 2.7vh;
-    font-size: 2.10vh;
-}
+    .resNavLinks .navLink {
+        padding: 2vh 2.7vh;
+        font-size: 2.10vh;
+    }
 
-.resNavBtns {
-    gap: 1.05vh;
-}
+    .resNavBtns {
+        gap: 1.05vh;
+    }
 
-.resNavBtns button {
-    font-size: 2vh;
-    padding-block: 1.50vh;
-}
+    .resNavBtns button {
+        font-size: 2vh;
+        padding-block: 1.50vh;
+    }
 
 }
 

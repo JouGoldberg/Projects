@@ -96,9 +96,9 @@
     }
 
     .contactForm {
-        margin-top: 20px;
+        margin-top: 6.05vw;
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 2.78vw;
     }
 
     .formNumber {
@@ -107,13 +107,13 @@
 
     .contactForm textarea {
         grid-column: auto;
-        height: 100px;
+        height: 33.33vw;
     }
 
     .formInput {
-        font-size: 15px;
-        padding: 12.5px;
-        border-radius: 5px;
+        font-size: 4.17vw;
+        padding: 3.61vw;
+        border-radius: 1.39vw;
     }
 
     .formBtn {
@@ -123,4 +123,5 @@
         font-size: 4vw;
         border-radius: 1.3vw;
     }
+
 }
