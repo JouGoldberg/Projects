@@ -91,12 +91,12 @@
     }
 
     .info {
-        font-size: 3.2vw;
+        font-size: 3.3vw;
         margin-top: 2.5vw;
     }
 
     .contactForm {
-        margin-top: 6.05vw;
+        margin-top: 6vw;
         grid-template-columns: 1fr;
         gap: 2.78vw;
     }
@@ -112,7 +112,7 @@
 
     .formInput {
         font-size: 4.17vw;
-        padding: 3.61vw;
+        padding: 3.3vw;
         border-radius: 1.39vw;
     }
 
