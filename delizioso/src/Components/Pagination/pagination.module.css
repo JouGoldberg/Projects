@@ -78,20 +78,20 @@
     
     .navBtn {
         margin-inline: 0.3vw;
-        width: 8.09vw;
-        height: 8.09vw;
+        width: 8.2vw;
+        height: 8.2vw;
         padding-bottom: 0.35vw;
         border: 0.17vw solid var(--primary);
-        border-radius: 2.25vw;
-        font-size: 4.2vw;
+        border-radius: 2.15vw;
+        font-size: 4.4vw;
     }
     
     .panigationNum {
         border: 0.17vw solid rgb(255, 138, 0, 0);
-        border-radius: 2.25vw;
-        width: 8.09vw;
-        height: 8.09vw;
-        font-size: 3.1vw;
+        border-radius: 2.15vw;
+        width: 8.2vw;
+        height: 8.2vw;
+        font-size: 3.25vw;
     }
     
     .activeMenuPage {

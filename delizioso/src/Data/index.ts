@@ -574,63 +574,7 @@ export const popularMenu: IPopularMenu = {
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
             price: 3,
             id: 80,
-        },
-        {
-            image: '/drink21.png',
-            name: 'Italian Cocktails',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 4,
-            id: 81,
-        },
-        {
-            image: '/drink22.png',
-            name: 'Milk Coffee',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 3,
-            id: 82,
-        },
-        {
-            image: '/drink23.png',
-            name: 'Cran-Merry',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 2.5,
-            id: 83,
-        },
-        {
-            image: '/drink24.png',
-            name: 'Vermut Berry',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 3.5,
-            id: 84,
-        },
-        {
-            image: '/drink25.png',
-            name: 'Apple Cocktail',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 2.5,
-            id: 85,
-        },
-        {
-            image: '/drink26.png',
-            name: 'Fun Cocktail',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 2,
-            id: 86,
-        },
-        {
-            image: '/drink27.png',
-            name: 'Blue Hawaii Cocktail',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 3.5,
-            id: 87,
-        },
-        {
-            image: '/drink28.png',
-            name: 'Lassi',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. ',
-            price: 4,
-            id: 88,
-        },
+        }
     ]
 }
 
